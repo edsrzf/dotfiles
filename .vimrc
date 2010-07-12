@@ -1,0 +1,42 @@
+set nocompatible
+source $VIMRUNTIME/mswin.vim
+behave mswin
+
+set autochdir                 "set pwd to directory of current file"
+
+"*** Console UI & Text display ***"
+set autochdir
+set number
+set mouse=a                   "use a mouse in the console"
+set ruler
+set lazyredraw
+set list
+set listchars=tab:»\ ,trail:·
+set showcmd                   "shows what's being typed as a command"
+set hlsearch                  "highlight searches"
+set incsearch                 "highlight while typing in a search"
+set showmatch                 "show matching ')' and '}'"
+
+"Spell checking"
+if version >= 700
+    set spl=en spell
+    set nospell
+endif
+
+"*** Indents and tabs ***"
+set autoindent            "set the cursor at the same indent as line above"
+set smartindent           "be smart about indenting"
+set expandtab             "expand tabs to spaces"
+set shiftwidth=4          "spaces for each step of indent"
+set shiftround            "always round indents to multiples of shiftwidth"
+set softtabstop=4         "set virtual tab stop"
+set tabstop=8             "proper display of files with tabs"
+set copyindent            "use existing indent characters for new indents"
+filetype plugin indent on "load filetype plugins and indent settings"
+
+"*** Filetypes ***"
+autocmd FileType html,xhthml,xml setlocal shiftwidth=2 tabstop=2
+autocmd FileType go setlocal noexpandtab
+
+"*** Mappings ***"
+inoremap jj <Esc>

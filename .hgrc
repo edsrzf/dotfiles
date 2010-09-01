@@ -1,0 +1,12 @@
+[ui]
+username=Evan Shaw <edsrzf@gmail.com>
+
+[extensions]
+hgext.bookmarks=
+hgext.churn=
+hgext.hgk=
+hggit=
+mq=
+
+[git]
+intree=1

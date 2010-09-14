@@ -1,7 +1,7 @@
 set nocompatible
 
 set autochdir                 "set pwd to directory of current file"
-nore ; :
+set hidden
 
 "*** Console UI & Text display ***"
 set visualbell
@@ -15,13 +15,7 @@ set showcmd                   "shows what's being typed as a command"
 set hlsearch                  "highlight searches"
 set incsearch                 "highlight while typing in a search"
 set showmatch                 "show matching ')' and '}'"
-syntax enable
-
-"Spell checking"
-if version >= 700
-    set spl=en spell
-    set nospell
-endif
+syntax on
 
 "*** Indents and tabs ***"
 set autoindent            "set the cursor at the same indent as line above"
@@ -35,11 +29,13 @@ set copyindent            "use existing indent characters for new indents"
 filetype plugin indent on "load filetype plugins and indent settings"
 
 "*** Filetypes ***"
-autocmd FileType html,xhthml,xml setlocal shiftwidth=2 tabstop=2
 autocmd FileType go setlocal noexpandtab
+autocmd FileType html,xhthml,xml setlocal shiftwidth=2 tabstop=2
+autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 
 "*** Mappings ***"
 inoremap jj <Esc>
+nore ; :
 
 "Tabs"
 map <C-t> :tabnew<CR>

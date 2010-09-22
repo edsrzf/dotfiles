@@ -10,6 +10,7 @@ map <left> <nop>
 map <right> <nop>
 
 "*** Console UI & Text display ***"
+set title                     "change the terminal's title"
 set visualbell
 set number
 set mouse=a                   "use a mouse in the console"
@@ -18,6 +19,10 @@ set lazyredraw
 set list
 set listchars=tab:»\ ,trail:·
 syntax on
+"allow backspacing over everything"
+set backspace=indent,eol,start
+"ignore these file extensions when globbing"
+set wildignore=*.5,*.6,*.8,*.o,*.swp
 
 "*** GUI options ***"
 if has('gui_running')
@@ -32,11 +37,16 @@ endif
 nnoremap / /\v
 vnoremap / /\v
 set showcmd                   "shows what's being typed as a command"
+set gdefault                  "replace globally by default"
 set hlsearch                  "highlight searches"
 set incsearch                 "highlight while typing in a search"
 set showmatch                 "show matching ')' and '}'"
 set ignorecase                "ignore case"
 set smartcase                 "except when search includes caps"
+
+"Use UTF-8 for everything"
+"set termencoding=utf-8
+"set encoding=utf-8
 
 "*** Line wrapping ***"
 set wrap                      "wrap lines"

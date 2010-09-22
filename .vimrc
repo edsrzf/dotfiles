@@ -42,7 +42,9 @@ set smartcase                 "except when search includes caps"
 set wrap                      "wrap lines"
 set textwidth=79              "wrap at column 79"
 set formatoptions=qrn1
-set colorcolumn=85            "color lines that are too long"
+if version >= 730
+    set colorcolumn=85            "color lines that are too long"
+endif
 
 "*** Indents and tabs ***"
 set autoindent            "set the cursor at the same indent as line above"

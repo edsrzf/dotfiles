@@ -52,7 +52,7 @@ set smartcase                 "except when search includes caps"
 set wrap                      "wrap lines"
 set textwidth=79              "wrap at column 79"
 set formatoptions=qrn1
-if version >= 730
+if version >= 703
     set colorcolumn=85            "color lines that are too long"
 endif
 

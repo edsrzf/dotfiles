@@ -33,9 +33,6 @@ if has('gui_running')
 endif
 
 "*** Search ***"
-"search with sane regular expressions"
-nnoremap / /\v
-vnoremap / /\v
 set showcmd                   "shows what's being typed as a command"
 set gdefault                  "replace globally by default"
 set hlsearch                  "highlight searches"

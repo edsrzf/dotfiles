@@ -26,7 +26,7 @@ set wildignore=*.5,*.6,*.8,*.o,*.swp
 
 "*** GUI options ***"
 if has('gui_running')
-    set lines=50              "windows are 100x50"
+    set lines=44              "windows are 100x44"
     set columns=100
     set guioptions-=m         "hide menu bar"
     set guioptions-=T         "hide tool bar"

@@ -66,7 +66,7 @@ filetype plugin indent on "load filetype plugins and indent settings"
 
 "*** Filetypes ***"
 autocmd FileType go setlocal noexpandtab
-autocmd FileType html,xhthml,xml setlocal shiftwidth=2 tabstop=2
+autocmd FileType html,xhthml,xml setlocal shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 
 "*** Mappings ***"
@@ -79,5 +79,7 @@ nnoremap k gk
 
 "tabs"
 map <C-t> :tabnew<CR>
-map <C-w> :tabclose<CR>
 map <C-Tab> :tabn<CR>
+
+"NERDTree"
+map <C-n> :NERDTree<CR>

@@ -57,16 +57,17 @@ endif
 set autoindent            "set the cursor at the same indent as line above"
 set smartindent           "be smart about indenting"
 set expandtab             "expand tabs to spaces"
-set shiftwidth=4          "spaces for each step of indent"
+set shiftwidth=8          "spaces for each step of indent"
 set shiftround            "always round indents to multiples of shiftwidth"
-set softtabstop=4         "set virtual tab stop"
-set tabstop=4             "proper display of files with tabs"
+set softtabstop=8         "set virtual tab stop"
+set tabstop=8             "proper display of files with tabs"
 set copyindent            "use existing indent characters for new indents"
 filetype plugin indent on "load filetype plugins and indent settings"
 
 "*** Filetypes ***"
 autocmd FileType go setlocal noexpandtab
 autocmd FileType html,xhthml,xml setlocal shiftwidth=2 softtabstop=2 tabstop=2
+autocmd FileType python setlocal shiftwidth=4 softtabstop=4 tabstop=4
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 
 "*** Mappings ***"

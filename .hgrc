@@ -5,7 +5,6 @@ username=Evan Shaw <edsrzf@gmail.com>
 hgext.bookmarks=
 hgext.churn=
 hgext.hgk=
-hggit=
 mq=
 
 [git]

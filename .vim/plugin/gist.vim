@@ -668,13 +668,13 @@ endfunction
 
 function! Gist(line1, line2, ...)
   if !exists('g:github_user')
-    let g:github_user = substitute(system('git config --global github.user'), "\n", '', '')
+    let g:github_user = substitute(system('git config github.user'), "\n", '', '')
     if strlen(g:github_user) == 0
       let g:github_user = $GITHUB_USER
     end
   endif
   if !exists('g:github_token')
-    let g:github_token = substitute(system('git config --global github.token'), "\n", '', '')
+    let g:github_token = substitute(system('git config github.token'), "\n", '', '')
     if strlen(g:github_token) == 0
       let g:github_token = $GITHUB_TOKEN
     end

@@ -5,3 +5,5 @@
 	ui = true
 [github]
         user = edsrzf
+[advice]
+	statusHints = false

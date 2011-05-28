@@ -23,6 +23,7 @@ syntax on
 set backspace=indent,eol,start
 "ignore these file extensions when globbing"
 set wildignore=*.5,*.6,*.8,*.o,*.swp
+set nostartofline             "don't go to start of line when scrolling"
 
 "*** GUI options ***"
 if has('gui_running')
@@ -31,6 +32,14 @@ if has('gui_running')
     set guioptions-=m         "hide menu bar"
     set guioptions-=T         "hide tool bar"
 endif
+
+"*** Backups ***"
+"don't create a ~ backup file"
+set nobackup
+"write directly to the file instead of creating a new file and renaming"
+set nowritebackup
+"put .swp files in vim directory"
+set directory=~/.vim/swap,~/tmp,.
 
 "*** Search ***"
 set showcmd                   "shows what's being typed as a command"
@@ -78,6 +87,9 @@ nore ; :
 "move by screen lines, not file lines"
 nnoremap j gj
 nnoremap k gk
+
+"redraw the screen and remove search highlighting"
+nnoremap <silent> <C-l> :noh<CR><C-l>
 
 "tabs"
 map <C-t> :tabnew<CR>

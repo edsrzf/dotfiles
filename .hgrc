@@ -5,7 +5,9 @@ username=Evan Shaw <edsrzf@gmail.com>
 hgext.bookmarks=
 hgext.churn=
 hgext.hgk=
+hgext.purge=
+hgext.record=
+color=
+histedit=~/.hgext/hg_histedit.py
 mq=
-
-[git]
-intree=1
+rebase=

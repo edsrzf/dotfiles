@@ -1,4 +1,4 @@
-for FILE in $(find -mindepth 1 -maxdepth 1 ! -name .git ! -name README ! -name install); do
+for FILE in $(find -mindepth 1 -maxdepth 1 ! -name .git ! -name .gitignore ! -name README ! -name install); do
     FILE=$(basename $FILE)
     ln -sf $PWD/$FILE ~/$FILE
 done

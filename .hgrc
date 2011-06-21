@@ -11,3 +11,6 @@ color=
 histedit=~/.hgext/hg_histedit.py
 mq=
 rebase=
+
+[web]
+cacerts = /etc/ssl/certs/ca-certificates.crt

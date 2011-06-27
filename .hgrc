@@ -12,5 +12,10 @@ histedit=~/.hgext/hg_histedit.py
 mq=
 rebase=
 
+[auth]
+bitbucket.prefix=bitbucket.org/edsrzf
+bitbucket.username=edsrzf
+bitbucket.schemes=https
+
 [web]
 cacerts = /etc/ssl/certs/ca-certificates.crt

@@ -22,7 +22,7 @@ syntax on
 "allow backspacing over everything"
 set backspace=indent,eol,start
 "ignore these file extensions when globbing"
-set wildignore=*.5,*.6,*.8,*.o,*.swp
+set wildignore=*.5,*.6,*.8,*.class,*.o
 set nostartofline             "don't go to start of line when scrolling"
 
 "*** GUI options ***"

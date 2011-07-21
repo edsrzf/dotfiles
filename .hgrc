@@ -17,5 +17,10 @@ bitbucket.prefix=bitbucket.org/edsrzf
 bitbucket.username=edsrzf
 bitbucket.schemes=https
 
+[diff]
+git = 1
+showfunc = 1
+unified = 8
+
 [web]
 cacerts = /etc/ssl/certs/ca-certificates.crt

@@ -17,6 +17,9 @@ bitbucket.prefix=bitbucket.org/edsrzf
 bitbucket.username=edsrzf
 bitbucket.schemes=https
 
+[defaults]
+qnew = -Ue
+
 [diff]
 git = 1
 showfunc = 1

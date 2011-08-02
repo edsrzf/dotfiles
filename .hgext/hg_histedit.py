@@ -2,6 +2,7 @@
 
 Inspired by git rebase --interactive.
 """
+from inspect import getargspec
 try:
     import cPickle as pickle
 except ImportError:
@@ -20,16 +21,53 @@ from mercurial import url
 from mercurial import discovery
 from mercurial.i18n import _
 
-# Remove this hack and use cmdutil.updatedir when we're 1.7-only
 def _revsingle(repo, parent):
     return repo[parent]
 _revsingle = getattr(cmdutil, 'revsingle', _revsingle)
 
-# Remove this hack and use cmdutil.updatedir when we're 1.7-only
-if getattr(cmdutil, 'updatedir', None):
-    from mercurial.cmdutil import updatedir
+if getattr(cmdutil, 'bailifchanged', None):
+    from mercurial.cmdutil import bailifchanged
 else:
-    from mercurial.patch import updatedir
+    from mercurial.cmdutil import bail_if_changed as bailifchanged
+
+# hg < 1.7
+updatedir = getattr(patch, 'updatedir', None)
+if updatedir is None:
+    # hg >= 1.7
+    updatedir = getattr(cmdutil, 'updatedir', None)
+if updatedir is None:
+    # hg >= 1.9
+    from mercurial.scmutil import updatedir
+
+
+try:
+    hidepassword = util.hidepassword
+except AttributeError:
+    hidepassword = url.hidepassword
+
+# Different signatures to patch.patch, and different cleanup requirements
+if 'cwd' in getargspec(patch.patch)[0]:
+    # mercurial < 1.9:
+    #  - patch.patch takes cwd
+    #  - use cmdutil.updatedir to cleanup
+    def applypatch(ui, repo, patchname, strip=1, files=None, eolmode='strict',
+                    similarity=0):
+        # in mercurial < 1.9, patch.patch expects files to be a dictionary that
+        # will be filled with filenames that have been changed, and requires
+        # that this be run through updatedir
+        if files is None:
+            files = set()
+        filedict = {}
+        try:
+            retval = patch.patch(patchname, ui, strip=strip, cwd=repo.root,
+                                 files=filedict, eolmode=eolmode)
+        finally:
+            updatedir(ui, repo, filedict)
+        files.update(filedict.keys())
+        return retval
+else:
+    # mercurial > 1.9
+    applypatch = patch.patch
 
 # almost entirely stolen from the git-rebase--interactive.sh source
 editcomment = """
@@ -81,15 +119,14 @@ def pick(ui, repo, ctx, ha, opts):
         fp.write(chunk)
     fp.close()
     try:
-        files = {}
+        files = set()
         try:
-            patch.patch(patchfile, ui, cwd=repo.root, files=files, eolmode=None)
+            applypatch(ui, repo, patchfile, files=files, eolmode=None)
             if not files:
                 ui.warn(_('%s: empty changeset')
                              % node.hex(ha))
                 return ctx, [], [], []
         finally:
-            files = updatedir(ui, repo, files)
             os.unlink(patchfile)
     except Exception, inst:
         raise util.Abort(_('Fix up the change and run '
@@ -114,11 +151,10 @@ def edit(ui, repo, ctx, ha, opts):
         fp.write(chunk)
     fp.close()
     try:
-        files = {}
+        files = set()
         try:
-            patch.patch(patchfile, ui, cwd=repo.root, files=files, eolmode=None)
+            applypatch(ui, repo, patchfile, files=files, eolmode=None)
         finally:
-            files = updatedir(ui, repo, files)
             os.unlink(patchfile)
     except Exception, inst:
         pass
@@ -141,15 +177,14 @@ def fold(ui, repo, ctx, ha, opts):
         fp.write(chunk)
     fp.close()
     try:
-        files = {}
+        files = set()
         try:
-            patch.patch(patchfile, ui, cwd=repo.root, files=files, eolmode=None)
+            applypatch(ui, repo, patchfile, files=files, eolmode=None)
             if not files:
                 ui.warn(_('%s: empty changeset')
                              % node.hex(ha))
                 return ctx, [], [], []
         finally:
-            files = updatedir(ui, repo, files)
             os.unlink(patchfile)
     except Exception, inst:
         raise util.Abort(_('Fix up the change and run '
@@ -172,11 +207,10 @@ def finishfold(ui, repo, ctx, oldctx, newnode, opts, internalchanges):
     for chunk in gen:
         fp.write(chunk)
     fp.close()
-    files = {}
+    files = set()
     try:
-        patch.patch(patchfile, ui, cwd=repo.root, files=files, eolmode=None)
+        applypatch(ui, repo, patchfile, files=files, eolmode=None)
     finally:
-        files = updatedir(ui, repo, files)
         os.unlink(patchfile)
     newmessage = '\n***\n'.join(
         [ctx.description(), ] +
@@ -224,10 +258,16 @@ def histedit(ui, repo, *parent, **opts):
         dest = ui.expandpath(parent or 'default-push', parent or 'default')
         dest, revs = hg.parseurl(dest, None)[:2]
         if isinstance(revs, tuple):
-            # python >= 1.6
+            # hg >= 1.6
             revs, checkout = hg.addbranchrevs(repo, repo, revs, None)
             other = hg.repository(hg.remoteui(repo, opts), dest)
-            findoutgoing = discovery.findoutgoing
+            # hg >= 1.9
+            findoutgoing = getattr(discovery, 'findoutgoing', None)
+            if findoutgoing is None:
+                def findoutgoing(repo, other, force=False):
+                    common, outheads = discovery.findcommonoutgoing(
+                        repo, other, [], force=force)
+                    return repo.changelog.findmissing(common, outheads)[0:1]
         else:
             other = hg.repository(ui, dest)
             def findoutgoing(repo, other, force=False):
@@ -236,7 +276,7 @@ def histedit(ui, repo, *parent, **opts):
         if revs:
             revs = [repo.lookup(rev) for rev in revs]
 
-        ui.status(_('comparing with %s\n') % url.hidepassword(dest))
+        ui.status(_('comparing with %s\n') % hidepassword(dest))
         parent = findoutgoing(repo, other, force=opts.get('force'))
     else:
         if opts.get('force'):
@@ -314,7 +354,7 @@ def histedit(ui, repo, *parent, **opts):
         os.unlink(os.path.join(repo.path, 'histedit-state'))
         return
     else:
-        cmdutil.bail_if_changed(repo)
+        bailifchanged(repo)
         if os.path.exists(os.path.join(repo.path, 'histedit-state')):
             raise util.Abort('history edit already in progress, try '
                              '--continue or --abort')

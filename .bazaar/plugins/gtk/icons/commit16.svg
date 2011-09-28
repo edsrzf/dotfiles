@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="90"
+   inkscape:export-xdpi="90"
+   inkscape:export-filename="/home/klepas/Desktop/commit16.png"
+   sodipodi:docname="commit16.svg"
+   sodipodi:docbase="/home/dobey/Projects/gnome-icon-theme/32x32/mimetypes"
+   inkscape:version="0.45+devel"
+   sodipodi:version="0.32"
+   id="svg249"
+   height="16"
+   width="16"
+   version="1.0"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs3">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       id="perspective19"
+       inkscape:vp_x="-50 : 600 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="700 : 600 : 1"
+       inkscape:persp3d-origin="300 : 400 : 1" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-y="91"
+     inkscape:window-x="217"
+     inkscape:window-height="781"
+     inkscape:window-width="1228"
+     inkscape:document-units="px"
+     inkscape:grid-bbox="true"
+     showgrid="false"
+     inkscape:current-layer="layer5"
+     inkscape:cy="7.4176588"
+     inkscape:cx="8.7400151"
+     inkscape:zoom="1"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="0.11764706"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:showpageshadow="false"
+     width="32px"
+     height="32px"
+     showborder="true"
+     showguides="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid5376" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata4">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Commit</dc:title>
+        <dc:subject>
+          <rdf:Bag />
+        </dc:subject>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/GPL/2.0/" />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Simon Pascal Klein</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:source></dc:source>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>Lapo Calamandrei</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+        <dc:date></dc:date>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title></dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title></dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:identifier></dc:identifier>
+        <dc:relation></dc:relation>
+        <dc:language></dc:language>
+        <dc:coverage></dc:coverage>
+        <dc:description></dc:description>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/GPL/2.0/">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/Notice" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/ShareAlike" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/SourceCode" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Shadow" />
+  <g
+     style="display:inline"
+     inkscape:groupmode="layer"
+     inkscape:label="Base"
+     id="layer1" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Text"
+     style="display:inline">
+    <g
+       id="g5363"
+       transform="matrix(0.9275362,0,0,0.9275362,-11.646074,-13.668122)">
+      <g
+         inkscape:label="Shadow"
+         id="g5365" />
+      <g
+         id="g5367"
+         inkscape:label="Base"
+         style="display:inline" />
+      <g
+         style="display:inline"
+         inkscape:label="Text"
+         id="g5369">
+        <path
+           style="opacity:0.15;fill:none;fill-rule:evenodd;stroke:#545454;stroke-width:4.3125;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M 14.712174,25.290633 L 18.712174,29.290633 L 27.712174,19.290633"
+           id="path5547"
+           sodipodi:nodetypes="ccc" />
+        <g
+           transform="translate(8.2121737,15.237016)"
+           id="g3287">
+          <path
+             style="fill:none;fill-rule:evenodd;stroke:#4e9a06;stroke-width:4.3125;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="M 6.5,8.5 L 10.5,12.5 L 19.5,2.5"
+             id="path3285"
+             sodipodi:nodetypes="ccc" />
+          <path
+             style="fill:none;fill-rule:evenodd;stroke:#8ae234;stroke-width:2.15625;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="M 6.5,8.5 L 10.5,12.5 L 19.5,2.5"
+             id="path3279"
+             sodipodi:nodetypes="ccc" />
+        </g>
+        <path
+           id="path3291"
+           d="M 27.555924,16.737016 C 27.323666,16.778005 27.113367,16.899757 26.962174,17.080766 L 18.680924,26.268266 L 15.430924,23.018266 C 15.033969,22.621311 14.390379,22.621311 13.993424,23.018266 C 13.657764,23.353926 13.636424,23.846895 13.868424,24.237016 C 13.910789,24.165776 13.93213,24.07956 13.993424,24.018266 C 14.390379,23.621311 15.033969,23.621311 15.430924,24.018266 L 18.680924,27.268266 L 26.962174,18.080766 C 27.113367,17.899757 27.323666,17.778005 27.555924,17.737016 C 27.966854,17.668971 28.378956,17.847056 28.587174,18.205766 C 28.745299,17.91233 28.752221,17.538654 28.587174,17.237016 C 28.383157,16.864157 27.97524,16.667582 27.555924,16.737016 z"
+           style="opacity:0.55598456;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
+    </g>
+  </g>
+</svg>

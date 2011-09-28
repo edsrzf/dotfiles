@@ -1,0 +1,203 @@
+((lp0
+VJelmer Vernooij <jelmer@samba.org>
+p1
+aVDaniel Schierbeck <daniel.schierbeck@gmail.com>
+p2
+aVSzilveszter Farkas (Phanatic) <Szilveszter.Farkas@gmail.com>
+p3
+aVGary van der Merwe <garyvdm@gmail.com>
+p4
+aVVincent Ladeuil <v.ladeuil+lp@free.fr>
+p5
+aVJasper Groenewegen <colbrac@xs4all.nl>
+p6
+aVJohn Arbash Meinel <john@arbash-meinel.com>
+p7
+aVAaron Bentley <abentley@panoramicfeedback.com>
+p8
+aVAaron Bentley <aaron@aaronbentley.com>
+p9
+aVAlexander Belchenko <bialix@ukr.net>
+p10
+aVDavid Allouche <david.allouche@canonical.com>
+p11
+aVDan Loda <danloda@gmail.com>
+p12
+aVAaron Bentley <aaron.bentley@utoronto.ca>
+p13
+aVScott James Remnant <scott@netsplit.com>
+p14
+aVScott Scriven <ubuntu@toykeeper.net>
+p15
+aVMateusz Korniak <matkor@laptop-hp>
+p16
+aVRobert Collins <robertc@robertcollins.net>
+p17
+aVSzilveszter Farkas (Phanatic) <szilveszter.farkas@gmail.com>
+p18
+aVMartin Albisetti <argentina@gmail.com>
+p19
+aVSabin Iacob (m0n5t3r) <iacobs@m0n5t3r.info>
+p20
+aVJavier Derderian <javierder@gmail.com>
+p21
+aVjbailey@ubuntu.com
+p22
+aVMartin Pool <mbp@canonical.com>
+p23
+aVGary van der Merwe <garyvdm@garyvdm-desktop>
+p24
+aVRichard Ferguson <ubuntu@fergusnet.com>
+p25
+aVElliot Murphy <elliot@elliotmurphy.com>
+p26
+aVAdeodato Simó <dato@net.com.org.es>
+p27
+aVv.ladeuil+lp@free.fr
+p28
+aVSzilveszter Farkas <szilveszter.farkas@gmail.com>
+p29
+aVWouter van Heyst <larstiq@larstiq.dyndns.org>
+p30
+aVTorsten Landschoff <torsten@debian.org>
+p31
+aVJamie Wilkinson <jaq@spacepants.org>
+p32
+aVGediminas Paulauskas <menesis@pov.lt>
+p33
+aVAndrew Starr-Bochicchio <a.starr.b@gmail.com>
+p34
+aVAli Sabil <ali.sabil@gmail.com>
+p35
+aVAdrian Wilkins <adrian.wilkins@gmail.com>
+p36
+aVMichael Ellerman <michael@ellerman.id.au>
+p37
+aVMateusz Korniak (matkor@laptop-hp)
+p38
+aVJelmer Vernooij <Jelmer Vernooij@LENOVO-C29B82CD>
+p39
+aVFarkas Szilveszter <szilveszter@szilveszter-desktop>
+p40
+aVDaniel Schömer <daniel.schoemer@gmx.net>
+p41
+aVChris Lamb <chris@chris-lamb.co.uk>
+p42
+aVChad MILLER <chad@mysql.com>
+p43
+aVrodney.dawes@canonical.com
+p44
+aVmatkor <matkor@laptop-hp>
+p45
+aVklight@walkertechnical.com
+p46
+aVklight <klight@X111>
+p47
+aVVincent Geddes <vincent.geddes@gmail.com>
+p48
+aVToshio Kuratomi <toshio@fedoraproject.org>
+p49
+aVTom Badran <tom@badrunner.net>
+p50
+aVSzilveszter Farkas <szilveszter@MacBookPro.local>
+p51
+aVStéphane Raimbault <stephane.raimbault@gmail.com>
+p52
+aVSergei Golubchik <sergii@pisem.net>
+p53
+aVScott James Remnant <scott@ubuntu.com>
+p54
+aVRuss Brown <pickscrape@gmail.com>
+p55
+aVRichard Ferguson <fergus@fergusnet.com>
+p56
+aVRene Huber <rhuber@ubuntu>
+p57
+aVPelle Johansson <pelle@blocket.se>
+p58
+aVMichael Vogt <michael.vogt@ubuntu.com>
+p59
+aVMathias Brodala <info@noctus.net>
+p60
+aVMarkus Korn <thekorn@gmx.de>
+p61
+aVMario Danic  <mario.danic@gmail.com>
+p62
+aVLucas Shrewsbury <rollbak@gmail.com>
+p63
+aVKevin Light <klight@walkertechnical.com>
+p64
+aVJohn Szakmeister <john@szakmeister.net>
+p65
+aVJean-François Fortin Tam <jeff@ecchi.ca>
+p66
+aVJasper Groenewegen <colbrac@xs4al.nl>
+p67
+aVJames Westby <jw+debian@jameswestby.net>
+p68
+aVJames Henstridge <james@jamesh.id.au>
+p69
+aVErik Bagfors <erik@bagfors.nu>
+p70
+aVEdward Ari Bichetero <ebichete@yahoo.com>
+p71
+aVEdward Ari Bichetero <ebichete@hysteria-tech.com>
+p72
+aVDennis Miller <millerdl@telusplanet.net>
+p73
+aVDavid Roberts <smartGPX@Gmail.Com>
+p74
+aVAndrew Bennetts <andrew@puzzling.org>
+p75
+aVAlexandre Défossez <alexandre.defossez@gmail.com>
+p76
+aVAdrian Room <ingolemo@gmail.com>
+p77
+a(lp78
+g1
+ag3
+ag5
+ag2
+ag12
+ag4
+ag27
+ag51
+ag29
+ag15
+ag14
+ag68
+ag45
+ag22
+ag50
+ag53
+aVSense Hofstede <qense@ubuntu.com>
+p79
+ag54
+ag55
+ag17
+ag16
+ag23
+ag19
+ag63
+aVKiddo <nekohayo@gmail.com>
+p80
+ag64
+ag65
+ag39
+ag6
+ag24
+ag11
+ag8
+a(lp81
+g3
+ag2
+ag34
+ag19
+ag63
+ag1
+a(lp82
+g3
+ag18
+ag52
+atp83
+.

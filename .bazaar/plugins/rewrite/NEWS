@@ -1,0 +1,208 @@
+0.6.2	2011-03-02
+
+  BUG FIXES
+
+   * Mark as compatible with the Bazaar 2.3 API. (Vincent Ladeuil)
+
+   * Mark as compatible with the Bazaar 2.4 API. (Jelmer Vernooij)
+
+0.6.1	2010-08-09
+
+  BUG FIXES
+
+   * Don't do pulls either when running with dry-run. (Jelmer Vernooij,
+     #522960)
+
+   * Allow branch to operate on to be specified explicitly.
+     (Levi Bard, #459371)
+
+   * Fix traceback when using --merge option. (John Szakmeister)
+
+   * Unlock working tree properly on all errors. (Jelmer Vernooij, #447302)
+
+   * Warn about uncommitted changes before downloading history.
+     (Jelmer Vernooij, #605091)
+
+   * Properly lock basis tree in rebase-foreign. (Colin Watson)
+
+   * Cope with tags referencing ghost revisions in rebase-foreign. 
+     (Colin Watson)
+
+0.6.0	2010-03-27
+
+  BUG FIXES
+
+   * Treat a stop revision as inclusive, not exclusive. 
+     (Max Bowsher, Jelmer Vernooij)
+
+   * Fix rebase to not discard revisions off the leftmost path.
+     (Robert Collins, Max Bowsher, #266897)
+
+   * Mark as compatible with bzr 2.2. (Jelmer Vernooij)
+
+  CHANGES
+
+   * svn-upgrade/foreign-mapping-upgrade was removed. Use rebase-foreign
+     instead. (Jelmer Vernooij)
+
+0.5.5	2009-12-15
+
+  BUG FIXES
+
+   * Mark as compatible with Bazaar 2.1.
+
+  FEATURES
+
+   * Add hidden 'pseudonyms' command for finding revision pseudonyms.
+
+   * Add 'rebase-foreign' command for rebasing branches of imports.
+
+0.5.4	2009-09-24
+
+  CHANGES
+
+   * The 'svn-upgrade' command is no longer provided. Instead, please 
+     use the 'foreign-mapping-upgrade' command.
+
+  BUG FIXES
+
+   * Mark as compatible with Bazaar 1.18 and 2.0.
+
+0.5.3	2009-07-18
+
+  BUG FIXES
+
+  * Fix for brown paper bag issue in the 0.5.2 release. (#401174)
+
+0.5.2	2009-07-14
+
+  * Mark as compatible with Bazaar 1.17.
+
+0.5.1	2009-06-18
+
+ BUG FIXES
+
+  * Mark as compatible with Bazaar 1.16.
+
+0.5.0	2009-05-20
+
+ BUG FIXES
+
+  * Remove use of deprecated Revision.get_apparent_author().
+
+ FEATURES
+
+  * Import "bzr foreign-mapping-upgrade" command from bzr-foreign.
+
+0.4.4	2009-03-10
+
+ BUG FIXES
+
+  * Mark as compatible with bzr 1.13.
+
+  Change license back to GPL2-+
+
+0.4.3	2009-02-15
+
+ BUG FIXES
+
+  * Cope with ghosts in svn-upgrade. (#323140, #325402)
+
+ PERFORMANCE
+
+  * Register commands lazily, should reduce import time when unused.
+  
+
+0.4.2	2008-11-18
+
+ FEATURES
+
+  * Will automatically pull if it's not possible to rebase. 
+    (#240204)
+
+  * Use parent location as default rather than push location.
+
+  * Hide "replay" command.
+
+0.4.1	2008-09-01
+
+ BUG FIXES
+
+  * Loosen check of text parents a bit (required for bzr-svn).
+
+ CHANGES
+
+  * Support DESTDIR in Makefile.
+
+0.4		2008-08-02
+
+ CHANGES
+
+  * Changed license from GPLv2 or later to GPLv3 or later.
+
+ BUG FIXES
+
+  * Fix compatibility with Bazaar 1.6. 
+
+  * Fixed overactive assertion. (#242245)
+
+  * Fixed O(history) access during plan creation. (Robert Collins, #249823)
+
+ ENHANCEMENTS
+
+  * Set author property to preserve committer and original author of the 
+    commit.  (Lukáš Lalinský)
+
+  * Add new option --pending-merges for rebasing pending merges after 
+    "bzr up". (#162622)
+
+0.3		2007-12-06
+
+ ENHANCEMENTS
+
+  * "bzr replay" now supports revision ranges.
+
+  * Don't require any of the commands to be run in 
+    the branch root.
+
+  * Give preference to push location when no upstream location 
+    is specified.
+
+  * Make message when there is nothing to rebase a 
+    bit friendlier.
+
+ BUG FIXES
+
+  * Fix "bzr replay", add test.
+
+0.2		2007-10-19
+
+ BUG FIXES
+
+  * Raise exception about pending changes /before/ writing plan. 
+    (#144407)
+
+  * Use better merge bases (#144033)
+
+  * Give proper warning when there is no common base. (#144401)
+
+  * Support the -r argument to rebase.
+
+  * Add --dry-run option to rebase command. 
+
+  * Fix compatibility with Bazaar 0.92.
+   (#144031)
+
+  * Store parents correctly.
+ 
+ FEATURES
+
+  * Skip double merges by default, unless specified otherwise. (#126743)
+
+  * Check for incompatible Bazaar functions.
+
+  * Add replay command.
+
+0.1 	2007-07-15
+
+ * Initial release.

@@ -1,0 +1,1463 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-05-05 20:10+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: branch.py:52 olive.glade:151 olive.glade:167
+msgid "_Branch"
+msgstr ""
+
+#: branch.py:55 checkout.py:53 branch.py:60 checkout.py:54
+msgid "Please select a folder"
+msgstr ""
+
+#: branch.py:57 checkout.py:55 branch.py:55 checkout.py:56
+msgid "Branch location:"
+msgstr ""
+
+#: branch.py:58 checkout.py:56 branch.py:57 checkout.py:57
+msgid "Destination:"
+msgstr ""
+
+#: branch.py:59 checkout.py:57 branch.py:58 checkout.py:58
+msgid "Branck nick:"
+msgstr ""
+
+#: branch.py:60 checkout.py:58 branch.py:59 checkout.py:59
+msgid "Revision:"
+msgstr ""
+
+#: branch.py:162 checkout.py:163 branch.py:140 checkout.py:164
+msgid "Missing branch location"
+msgstr ""
+
+#: branch.py:163 checkout.py:164 branch.py:141 checkout.py:165
+msgid "You must specify a branch location."
+msgstr ""
+
+#: branch.py:205 branch.py:182
+msgid "Branching successful"
+msgstr ""
+
+#: branch.py:206 branch.py:183
+#, python-format
+msgid "%d revision(s) branched."
+msgstr ""
+
+#: branch.py:214 checkout.py:195 branch.py:191 checkout.py:196
+msgid "N/A"
+msgstr ""
+
+#: checkout.py:50 checkout.py:51
+msgid "Check_out"
+msgstr ""
+
+#: checkout.py:62 checkout.py:63
+msgid "_Lightweight checkout"
+msgstr ""
+
+#: commit.py:68 __init__.py:362
+msgid "Directory does not have a working tree"
+msgstr ""
+
+#: commit.py:69 __init__.py:363
+msgid "Operation aborted."
+msgstr ""
+
+#: commit.py:74 errors.py:26 add.py:76 add.py:86 info.py:556 olive/add.py:76
+#: olive/add.py:86 olive/info.py:556 errors.py:28 olive/add.py:77
+#: olive/add.py:87 olive/info.py:557
+msgid "Directory is not a branch"
+msgstr ""
+
+#: commit.py:75 errors.py:27 add.py:77 add.py:87 info.py:557 olive/add.py:77
+#: olive/add.py:87 olive/info.py:557 errors.py:29 olive/add.py:78
+#: olive/add.py:88 olive/info.py:558
+msgid "You can perform this action only in a branch."
+msgstr ""
+
+#: commit.py:88 commit.py:337 commit.py:338
+msgid "Comm_it"
+msgstr ""
+
+#: commit.py:89
+msgid "File(s) to commit"
+msgstr ""
+
+#: commit.py:95
+msgid "Commit message:"
+msgstr ""
+
+#: commit.py:99
+msgid "Pending merges"
+msgstr ""
+
+#: commit.py:147 commit.py:310 commit.py:311
+msgid "_Only commit locally"
+msgstr ""
+
+#: commit.py:215 commit.py:650 commit.py:652
+msgid "Commit with an empty message?"
+msgstr ""
+
+#: commit.py:216 commit.py:651 commit.py:653
+msgid "You can describe your commit intent in the message."
+msgstr ""
+
+#: commit.py:228 commit.py:670 commit.py:672
+msgid "Commit with unknowns?"
+msgstr ""
+
+#: commit.py:229 commit.py:671 commit.py:673
+msgid "Unknown files exist in the working tree. Commit anyway?"
+msgstr ""
+
+#: commit.py:240 commit.py:689 commit.py:691
+msgid "Commit with no changes?"
+msgstr ""
+
+#: commit.py:241
+msgid "There are no changes in the working tree."
+msgstr ""
+
+#: commit.py:323 menu.py:87 commit.py:415 olive/menu.py:86 commit.py:416
+#: olive/menu.py:87
+msgid "Commit"
+msgstr ""
+
+#: commit.py:325 conflicts.py:108 commit.py:419 conflicts.py:109 commit.py:420
+#: conflicts.py:110
+msgid "Path"
+msgstr ""
+
+#: commit.py:327 conflicts.py:110 commit.py:421 conflicts.py:111 commit.py:422
+#: conflicts.py:112
+msgid "Type"
+msgstr ""
+
+#: commit.py:334 commit.py:336 commit.py:338 __init__.py:940 __init__.py:1227
+#: commit.py:167 olive/__init__.py:1053 olive/__init__.py:1358 commit.py:168
+#: olive/__init__.py:1054 olive/__init__.py:1359
+msgid "added"
+msgstr ""
+
+#: commit.py:344 commit.py:346 commit.py:348 __init__.py:938 __init__.py:1225
+#: commit.py:168 olive/__init__.py:1051 olive/__init__.py:1356 commit.py:169
+#: olive/__init__.py:1052 olive/__init__.py:1357
+msgid "removed"
+msgstr ""
+
+#: commit.py:353 commit.py:170 commit.py:171
+msgid "renamed and modified"
+msgstr ""
+
+#: commit.py:355 __init__.py:936 __init__.py:1223 commit.py:169
+#: olive/__init__.py:1049 olive/__init__.py:1354 commit.py:170
+#: olive/__init__.py:1050 olive/__init__.py:1355
+msgid "renamed"
+msgstr ""
+
+#: commit.py:380 commit.py:382 commit.py:384 __init__.py:942 __init__.py:1229
+#: commit.py:171 olive/__init__.py:1055 olive/__init__.py:1360 commit.py:172
+#: olive/__init__.py:1056 olive/__init__.py:1361
+msgid "modified"
+msgstr ""
+
+#: commit.py:395 commit.py:480 commit.py:481
+msgid "Date"
+msgstr ""
+
+#: commit.py:397 revbrowser.py:68 commit.py:482 commit.py:483
+msgid "Committer"
+msgstr ""
+
+#: commit.py:399 revbrowser.py:66 commit.py:484 commit.py:485
+msgid "Summary"
+msgstr ""
+
+#: conflicts.py:48 conflicts.py:49
+msgid "External utility:"
+msgstr ""
+
+#: conflicts.py:99 conflicts.py:100
+msgid "Conflicts"
+msgstr ""
+
+#: conflicts.py:102 conflicts.py:103
+msgid "No conflicts in working tree."
+msgstr ""
+
+#: conflicts.py:115 conflicts.py:116 conflicts.py:117
+msgid "path conflict"
+msgstr ""
+
+#: conflicts.py:117 conflicts.py:118 conflicts.py:119
+msgid "contents conflict"
+msgstr ""
+
+#: conflicts.py:119 conflicts.py:120 conflicts.py:121
+msgid "text conflict"
+msgstr ""
+
+#: conflicts.py:121 conflicts.py:122 conflicts.py:123
+msgid "duplicate id"
+msgstr ""
+
+#: conflicts.py:123 conflicts.py:124 conflicts.py:125
+msgid "duplicate"
+msgstr ""
+
+#: conflicts.py:125 conflicts.py:126 conflicts.py:127
+msgid "parent loop"
+msgstr ""
+
+#: conflicts.py:127 conflicts.py:128 conflicts.py:129
+msgid "unversioned parent"
+msgstr ""
+
+#: conflicts.py:129 conflicts.py:130 conflicts.py:131
+msgid "missing parent"
+msgstr ""
+
+#: conflicts.py:131 conflicts.py:132 conflicts.py:133
+msgid "deleting parent"
+msgstr ""
+
+#: conflicts.py:133 conflicts.py:134 conflicts.py:135
+msgid "unknown type of conflict"
+msgstr ""
+
+#: conflicts.py:162 __init__.py:614 add.py:67 menu.py:178 menu.py:191
+#: menu.py:218 menu.py:254 move.py:79 remove.py:67 remove.py:129 rename.py:70
+#: conflicts.py:163 olive/__init__.py:687 olive/add.py:67 olive/menu.py:177
+#: olive/menu.py:190 olive/menu.py:217 olive/menu.py:253 olive/move.py:79
+#: olive/remove.py:67 olive/remove.py:129 olive/rename.py:70 conflicts.py:164
+#: olive/__init__.py:688 olive/add.py:68 olive/menu.py:178 olive/menu.py:191
+#: olive/menu.py:218 olive/menu.py:254 olive/move.py:80 olive/remove.py:68
+#: olive/remove.py:130 olive/rename.py:71
+msgid "No file was selected"
+msgstr ""
+
+#: conflicts.py:163 __init__.py:615 menu.py:192 conflicts.py:164
+#: olive/__init__.py:688 olive/menu.py:191 conflicts.py:165
+#: olive/__init__.py:689 olive/menu.py:192
+msgid "Please select a file from the list."
+msgstr ""
+
+#: conflicts.py:173 conflicts.py:174 conflicts.py:175
+msgid "Call to external utility failed"
+msgstr ""
+
+#: conflicts.py:175 conflicts.py:176 conflicts.py:177
+msgid "Cannot resolve conflict"
+msgstr ""
+
+#: conflicts.py:176 conflicts.py:177 conflicts.py:178
+msgid ""
+"Only conflicts on the text of files can be resolved with Olive at the "
+"moment. Content conflicts, on the structure of the tree, need to be resolved "
+"using the command line."
+msgstr ""
+
+#: errors.py:29 errors.py:31
+msgid "Directory is not a checkout"
+msgstr ""
+
+#: errors.py:30 errors.py:32
+msgid "You can perform local commit only on checkouts."
+msgstr ""
+
+#: errors.py:32 errors.py:34
+msgid "No changes to commit"
+msgstr ""
+
+#: errors.py:33 errors.py:35
+msgid "Try force commit if you want to commit anyway."
+msgstr ""
+
+#: errors.py:35 errors.py:37
+msgid "Conflicts in tree"
+msgstr ""
+
+#: errors.py:36 errors.py:38
+msgid "You need to resolve the conflicts before committing."
+msgstr ""
+
+#: errors.py:38 errors.py:40
+msgid "Strict commit failed"
+msgstr ""
+
+#: errors.py:39 errors.py:41
+msgid ""
+"There are unknown files in the working tree.\n"
+"Please add or delete them."
+msgstr ""
+
+#: errors.py:41 errors.py:43
+msgid "Bound branch is out of date"
+msgstr ""
+
+#: errors.py:42 errors.py:45
+#, python-format
+msgid "%s"
+msgstr ""
+
+#: errors.py:44 errors.py:47
+msgid "File not versioned"
+msgstr ""
+
+#: errors.py:45 errors.py:48
+msgid "The selected file is not versioned."
+msgstr ""
+
+#: errors.py:47 push.py:105 errors.py:50 push.py:106
+msgid "Branches have been diverged"
+msgstr ""
+
+#: errors.py:48 errors.py:51
+msgid ""
+"You cannot push if branches have diverged. Use the\n"
+"overwrite option if you want to push anyway."
+msgstr ""
+
+#: errors.py:50 errors.py:53
+msgid "No diff output"
+msgstr ""
+
+#: errors.py:51 errors.py:54
+msgid "The selected file hasn't changed."
+msgstr ""
+
+#: errors.py:53 errors.py:56
+msgid "No such revision"
+msgstr ""
+
+#: errors.py:54 errors.py:57
+msgid "The revision you specified doesn't exist."
+msgstr ""
+
+#: errors.py:56 errors.py:59
+msgid "Target already exists"
+msgstr ""
+
+#: errors.py:57 errors.py:60
+msgid "Target directory already exists. Please select another target."
+msgstr ""
+
+#: errors.py:59 errors.py:62
+msgid "Directory is already a branch"
+msgstr ""
+
+#: errors.py:60 errors.py:63
+#, python-format
+msgid ""
+"The current directory (%s) is already a branch.\n"
+"You can start using it, or initialize another directory."
+msgstr ""
+
+#: errors.py:62 errors.py:65
+msgid "Branch without a working tree"
+msgstr ""
+
+#: errors.py:63 errors.py:66
+#, python-format
+msgid ""
+"The current directory (%s)\n"
+"is a branch without a working tree."
+msgstr ""
+
+#: errors.py:65 errors.py:68
+msgid "Unknown bzr error"
+msgstr ""
+
+#: errors.py:67 errors.py:70
+msgid "Permission denied"
+msgstr ""
+
+#: errors.py:67 errors.py:70
+msgid "permission denied."
+msgstr ""
+
+#: errors.py:69 errors.py:72
+msgid "Unknown error"
+msgstr ""
+
+#: initialize.py:47 initialize.py:48
+msgid "_Initialize"
+msgstr ""
+
+#: initialize.py:48 initialize.py:49
+msgid "Which directory do you want to initialize?"
+msgstr ""
+
+#: initialize.py:49 initialize.py:50
+msgid "Current directory"
+msgstr ""
+
+#: initialize.py:50 initialize.py:51
+msgid "Create a new directory with the name:"
+msgstr ""
+
+#: initialize.py:85 initialize.py:86
+msgid "Directory name not specified"
+msgstr ""
+
+#: initialize.py:86 initialize.py:87
+msgid "You should specify a new directory name."
+msgstr ""
+
+#: merge.py:66 merge.py:68 merge.py:69
+msgid "Branch not given"
+msgstr ""
+
+#: merge.py:67 merge.py:69 merge.py:70
+msgid "Please specify a branch to merge from."
+msgstr ""
+
+#: merge.py:75 merge.py:77 merge.py:78
+msgid "Bazaar command error"
+msgstr ""
+
+#: merge.py:81 diff.py:513 merge.py:83 diff.py:514 merge.py:84
+msgid "Merge successful"
+msgstr ""
+
+#: merge.py:82 diff.py:514 merge.py:84 diff.py:515 merge.py:85
+msgid "All changes applied successfully."
+msgstr ""
+
+#: merge.py:85 diff.py:517 merge.py:87 diff.py:518 merge.py:88
+msgid "Conflicts encountered"
+msgstr ""
+
+#: merge.py:86 diff.py:518 merge.py:88 diff.py:519 merge.py:89
+msgid "Please resolve the conflicts manually before committing."
+msgstr ""
+
+#: push.py:52 bookmark.py:45 olive/bookmark.py:45 push.py:53
+#: olive/bookmark.py:46
+msgid "Location:"
+msgstr ""
+
+#: push.py:54 push.py:55
+msgid "_Push"
+msgstr ""
+
+#: push.py:97 push.py:98
+msgid "Set default push location"
+msgstr ""
+
+#: push.py:98 push.py:99
+#, python-format
+msgid ""
+"There is no default push location set.\n"
+"Set %r as default now?"
+msgstr ""
+
+#: push.py:106 push.py:107
+msgid ""
+"You cannot push if branches have diverged.\n"
+"Overwrite?"
+msgstr ""
+
+#: push.py:112 push.py:111
+msgid "Push successful"
+msgstr ""
+
+#: push.py:113 push.py:112
+#, python-format
+msgid "%d revision(s) pushed."
+msgstr ""
+
+#: push.py:146 push.py:145
+msgid "Non existing parent directory"
+msgstr ""
+
+#: push.py:147 push.py:146
+#, python-format
+msgid ""
+"The parent directory (%s)\n"
+"doesn't exist. Create?"
+msgstr ""
+
+#: revbrowser.py:45
+msgid "Please wait, revisions are being loaded..."
+msgstr ""
+
+#: revbrowser.py:48 revbrowser.py:44 revbrowser.py:45
+msgid "_Select"
+msgstr ""
+
+#: revbrowser.py:64
+msgid "Revno"
+msgstr ""
+
+#: revbrowser.py:70
+msgid "Time"
+msgstr ""
+
+#: status.py:78 status.py:82 status.py:84
+msgid "Added"
+msgstr ""
+
+#: status.py:84 status.py:88 status.py:90
+msgid "Removed"
+msgstr ""
+
+#: status.py:90 status.py:94 status.py:96
+msgid "Renamed"
+msgstr ""
+
+#: status.py:97 status.py:101 status.py:103
+msgid "Modified"
+msgstr ""
+
+#: status.py:105 status.py:109 status.py:111
+msgid "Unknown"
+msgstr ""
+
+#: status.py:110 status.py:114 status.py:116
+msgid "No changes."
+msgstr ""
+
+#: tags.py:67 tags.py:65 tags.py:66
+msgid "Tags"
+msgstr ""
+
+#: tags.py:111 tags.py:109 tags.py:110
+msgid "Tag Name"
+msgstr ""
+
+#: tags.py:116 tags.py:114 tags.py:115
+msgid "Revision ID"
+msgstr ""
+
+#: tags.py:151 tags.py:149 tags.py:150
+msgid "Tags are not supported by this branch format. Please upgrade."
+msgstr ""
+
+#: tags.py:157 tags.py:155 tags.py:156
+msgid "No tagged revisions in the branch."
+msgstr ""
+
+#: tags.py:232 tags.py:230 tags.py:231
+msgid "_Remove tag"
+msgstr ""
+
+#: tags.py:242 tags.py:240 tags.py:241
+msgid "<b><big>Remove tag?</big></b>"
+msgstr ""
+
+#: tags.py:244 tags.py:242 tags.py:243
+#, python-format
+msgid "Are you sure you want to remove the tag: <b>%s</b>?"
+msgstr ""
+
+#: tags.py:289 tags.py:287 tags.py:288
+msgid "_Add tag"
+msgstr ""
+
+#: tags.py:291 tags.py:289 tags.py:290
+msgid "Tag Name:"
+msgstr ""
+
+#: tags.py:292 tags.py:290 tags.py:291
+msgid "Revision ID:"
+msgstr ""
+
+#: tags.py:323 tags.py:321 tags.py:322
+msgid "No tag name specified"
+msgstr ""
+
+#: tags.py:324 tags.py:322 tags.py:323
+msgid "You have to specify the tag's desired name."
+msgstr ""
+
+#: __init__.py:512 olive/__init__.py:539 olive/__init__.py:540
+msgid "There are local changes in the branch"
+msgstr ""
+
+#: __init__.py:513 olive/__init__.py:540 olive/__init__.py:541
+msgid "Please commit or revert the changes before merging."
+msgstr ""
+
+#: __init__.py:525 __init__.py:550 olive/__init__.py:555 olive/__init__.py:612
+#: olive/__init__.py:556 olive/__init__.py:613
+msgid "Parent location is unknown"
+msgstr ""
+
+#: __init__.py:526 olive/__init__.py:556 olive/__init__.py:557
+msgid "Cannot determine missing revisions if no parent location is known."
+msgstr ""
+
+#: __init__.py:537 olive/__init__.py:599 olive/__init__.py:600
+msgid "There are missing revisions"
+msgstr ""
+
+#: __init__.py:538
+#, python-format
+msgid "%d revision(s) missing."
+msgstr ""
+
+#: __init__.py:540 olive/__init__.py:602 olive/__init__.py:603
+msgid "Local branch up to date"
+msgstr ""
+
+#: __init__.py:541 olive/__init__.py:603 olive/__init__.py:604
+msgid "There are no missing revisions."
+msgstr ""
+
+#: __init__.py:551 olive/__init__.py:613 olive/__init__.py:614
+msgid "Pulling is not possible until there is a parent location."
+msgstr ""
+
+#: __init__.py:561 olive/__init__.py:623 olive/__init__.py:624
+msgid "Pull successful"
+msgstr ""
+
+#: __init__.py:561 olive/__init__.py:623 olive/__init__.py:624
+#, python-format
+msgid "%d revision(s) pulled."
+msgstr ""
+
+#: __init__.py:575 menu.py:275 olive/__init__.py:648 olive/menu.py:274
+#: olive/__init__.py:649 olive/menu.py:275
+msgid "Conflicts detected"
+msgstr ""
+
+#: __init__.py:576 menu.py:276 olive/__init__.py:649 olive/menu.py:275
+#: olive/__init__.py:650 olive/menu.py:276
+msgid "Please have a look at the working tree before continuing."
+msgstr ""
+
+#: __init__.py:578 menu.py:278 olive/__init__.py:651 olive/menu.py:277
+#: olive/__init__.py:652 olive/menu.py:278
+msgid "Revert successful"
+msgstr ""
+
+#: __init__.py:579 menu.py:279 olive/__init__.py:652 olive/menu.py:278
+#: olive/__init__.py:653 olive/menu.py:279
+msgid "All files reverted to last revision."
+msgstr ""
+
+#: __init__.py:835 __init__.py:1117 olive/__init__.py:942
+#: olive/__init__.py:1240 olive/__init__.py:943 olive/__init__.py:1241
+msgid "Bookmarks"
+msgstr ""
+
+#: __init__.py:842 menu.py:99 olive/__init__.py:949 olive/menu.py:98
+#: olive/__init__.py:950 olive/menu.py:99
+msgid "Bookmark"
+msgstr ""
+
+#: __init__.py:944 __init__.py:1231 olive/__init__.py:1057
+#: olive/__init__.py:1362 olive/__init__.py:1058 olive/__init__.py:1363
+msgid "unchanged"
+msgstr ""
+
+#: __init__.py:946 __init__.py:1233 olive/__init__.py:1059
+#: olive/__init__.py:1364 olive/__init__.py:1060 olive/__init__.py:1365
+msgid "ignored"
+msgstr ""
+
+#: __init__.py:948 __init__.py:1235 olive/__init__.py:1061
+#: olive/__init__.py:1368 olive/__init__.py:1062 olive/__init__.py:1369
+msgid "unknown"
+msgstr ""
+
+#: __init__.py:964 olive/__init__.py:1083 olive/__init__.py:1084
+msgid "Filename"
+msgstr ""
+
+#: __init__.py:965 olive/__init__.py:1084 olive/__init__.py:1085
+msgid "Status"
+msgstr ""
+
+#: __init__.py:966 olive/__init__.py:1085 olive/__init__.py:1086
+msgid "Size"
+msgstr ""
+
+#: __init__.py:967 olive/__init__.py:1086 olive/__init__.py:1087
+msgid "Last modified"
+msgstr ""
+
+#: add.py:68 menu.py:179 menu.py:219 menu.py:255 remove.py:68 remove.py:130
+#: olive/add.py:68 olive/menu.py:178 olive/menu.py:218 olive/menu.py:254
+#: olive/remove.py:68 olive/remove.py:130 olive/add.py:69 olive/menu.py:179
+#: olive/menu.py:219 olive/menu.py:255 olive/remove.py:69 olive/remove.py:131
+msgid ""
+"Please select a file from the list,\n"
+"or choose the other option."
+msgstr ""
+
+#: bookmark.py:46 olive/bookmark.py:46 olive/bookmark.py:47
+msgid "Title:"
+msgstr ""
+
+#: bookmark.py:81 olive/bookmark.py:81 olive/bookmark.py:82
+msgid "No title given"
+msgstr ""
+
+#: bookmark.py:82 olive/bookmark.py:82 olive/bookmark.py:83
+msgid "Please specify a title to continue."
+msgstr ""
+
+#: guifiles.py:45 olive/guifiles.py:47 olive/guifiles.py:48
+msgid "Glade file cannot be found."
+msgstr ""
+
+#: guifiles.py:55 olive/guifiles.py:57 olive/guifiles.py:58
+msgid "UI description file cannot be found."
+msgstr ""
+
+#: menu.py:63 olive/menu.py:62 olive/menu.py:63
+msgid "Add"
+msgstr ""
+
+#: menu.py:64 olive/menu.py:63 olive/menu.py:64
+msgid "Add the selected file"
+msgstr ""
+
+#: menu.py:67 menu.py:107 olive/menu.py:66 olive/menu.py:106 olive/menu.py:67
+#: olive/menu.py:107
+msgid "Remove"
+msgstr ""
+
+#: menu.py:68 olive/menu.py:67 olive/menu.py:68
+msgid "Remove the selected file"
+msgstr ""
+
+#: menu.py:71 olive/menu.py:70 olive/menu.py:71
+msgid "Remove and delete"
+msgstr ""
+
+#: menu.py:72 olive/menu.py:71 olive/menu.py:72
+msgid "Remove the selected file/dir and delete from disk"
+msgstr ""
+
+#: menu.py:75 olive/menu.py:74 olive/menu.py:75
+msgid "Rename"
+msgstr ""
+
+#: menu.py:76 olive/menu.py:75 olive/menu.py:76
+msgid "Rename the selected file"
+msgstr ""
+
+#: menu.py:79 olive/menu.py:78 olive/menu.py:79
+msgid "Open"
+msgstr ""
+
+#: menu.py:80 olive/menu.py:79 olive/menu.py:80
+msgid "Open the selected file"
+msgstr ""
+
+#: menu.py:83 olive/menu.py:82 olive/menu.py:83
+msgid "Revert"
+msgstr ""
+
+#: menu.py:84 olive/menu.py:83 olive/menu.py:84
+msgid "Revert the changes"
+msgstr ""
+
+#: menu.py:88 olive/menu.py:87 olive/menu.py:88
+msgid "Commit the changes"
+msgstr ""
+
+#: menu.py:91 olive/menu.py:90 olive/menu.py:91
+msgid "Annotate"
+msgstr ""
+
+#: menu.py:92 olive/menu.py:91 olive/menu.py:92
+msgid "Annotate the selected file"
+msgstr ""
+
+#: menu.py:95 olive/menu.py:94 olive/menu.py:95
+msgid "Diff"
+msgstr ""
+
+#: menu.py:96 olive/menu.py:95 olive/menu.py:96
+msgid "Show the diff of the file"
+msgstr ""
+
+#: menu.py:100 olive/menu.py:99 olive/menu.py:100
+msgid "Bookmark current location"
+msgstr ""
+
+#: menu.py:103 olive/menu.py:102 olive/menu.py:103
+msgid "Edit"
+msgstr ""
+
+#: menu.py:104 olive/menu.py:103 olive/menu.py:104
+msgid "Edit the selected bookmark"
+msgstr ""
+
+#: menu.py:108 olive/menu.py:107 olive/menu.py:108
+msgid "Remove the selected bookmark"
+msgstr ""
+
+#: menu.py:111 olive/menu.py:110 olive/menu.py:111
+msgid "Open Folder"
+msgstr ""
+
+#: menu.py:112 olive/menu.py:111 olive/menu.py:112
+msgid "Open bookmark folder in Nautilus"
+msgstr ""
+
+#: menu.py:115 olive/menu.py:114 olive/menu.py:115
+msgid "Selected..."
+msgstr ""
+
+#: menu.py:116 olive/menu.py:115 olive/menu.py:116
+msgid "Show the differences of the selected file"
+msgstr ""
+
+#: menu.py:119 olive/menu.py:118 olive/menu.py:119
+msgid "All..."
+msgstr ""
+
+#: menu.py:120 olive/menu.py:119 olive/menu.py:120
+msgid "Show the differences of all files"
+msgstr ""
+
+#: menu.py:123 olive/menu.py:122 olive/menu.py:123
+msgid "View contents"
+msgstr ""
+
+#: menu.py:124 olive/menu.py:123 olive/menu.py:124
+msgid "View the contents of the file in a builtin viewer"
+msgstr ""
+
+#: menu.py:127 olive/menu.py:126 olive/menu.py:127
+msgid "Show differences"
+msgstr ""
+
+#: menu.py:128 olive/menu.py:127 olive/menu.py:128
+msgid "Show the differences between two revisions of the file"
+msgstr ""
+
+#: menu.py:131 olive/menu.py:130 olive/menu.py:131
+msgid "Revert to this revision"
+msgstr ""
+
+#: menu.py:132 olive/menu.py:131 olive/menu.py:132
+msgid "Revert the selected file to the selected revision"
+msgstr ""
+
+#: menu.py:228 olive/menu.py:227 olive/menu.py:228
+msgid "Delete directory with all directories below ?"
+msgstr ""
+
+#: menu.py:315 olive/__init__.py:707 olive/menu.py:318 olive/__init__.py:708
+#: olive/menu.py:319
+msgid "Bookmark successfully added"
+msgstr ""
+
+#: menu.py:316 olive/__init__.py:708 olive/menu.py:319 olive/__init__.py:709
+#: olive/menu.py:320
+msgid ""
+"The current directory was bookmarked. You can reach\n"
+"it by selecting it from the left panel."
+msgstr ""
+
+#: menu.py:319 olive/__init__.py:711 olive/menu.py:322 olive/__init__.py:712
+#: olive/menu.py:323
+msgid "Location already bookmarked"
+msgstr ""
+
+#: menu.py:320 olive/__init__.py:712 olive/menu.py:323 olive/__init__.py:713
+#: olive/menu.py:324
+msgid ""
+"The current directory is already bookmarked.\n"
+"See the left panel for reference."
+msgstr ""
+
+#: mkdir.py:67 olive/mkdir.py:67 olive/mkdir.py:68
+msgid "No directory name given"
+msgstr ""
+
+#: mkdir.py:68 olive/mkdir.py:68 olive/mkdir.py:69
+msgid "Please specify a desired name for the new directory."
+msgstr ""
+
+#: mkdir.py:79 mkdir.py:89 olive/mkdir.py:79 olive/mkdir.py:89
+#: olive/mkdir.py:80 olive/mkdir.py:90
+msgid "Directory already exists"
+msgstr ""
+
+#: mkdir.py:80 mkdir.py:90 olive/mkdir.py:80 olive/mkdir.py:90
+#: olive/mkdir.py:81 olive/mkdir.py:91
+msgid "Please specify another name to continue."
+msgstr ""
+
+#: move.py:80 rename.py:71 olive/move.py:80 olive/rename.py:71
+#: olive/move.py:81 olive/rename.py:72
+msgid "Please select a file from the list to proceed."
+msgstr ""
+
+#: move.py:89 rename.py:87 olive/move.py:89 olive/rename.py:87
+#: olive/move.py:90 olive/rename.py:88
+msgid "Not the same branch"
+msgstr ""
+
+#: move.py:90 rename.py:88 olive/move.py:90 olive/rename.py:88
+#: olive/move.py:91 olive/rename.py:89
+msgid "The destination is not in the same branch."
+msgstr ""
+
+#: remove.py:79 remove.py:139 olive/remove.py:79 olive/remove.py:139
+#: olive/remove.py:80 olive/remove.py:140
+msgid "No matching files"
+msgstr ""
+
+#: remove.py:80 remove.py:140 olive/remove.py:80 olive/remove.py:140
+#: olive/remove.py:81 olive/remove.py:141
+msgid "No added files were found in the working tree."
+msgstr ""
+
+#: remove.py:105 olive.glade:825 olive.glade:878 olive/remove.py:105
+#: olive/remove.py:106
+msgid "Which file(s) do you want to remove?"
+msgstr ""
+
+#: remove.py:106 olive.glade:717 olive.glade:837 olive.glade:766
+#: olive.glade:890 olive/remove.py:106 olive/remove.py:107
+msgid "Selected only"
+msgstr ""
+
+#: remove.py:107 olive.glade:851 olive.glade:905 olive/remove.py:107
+#: olive/remove.py:108
+msgid "All files with status 'added'"
+msgstr ""
+
+#: remove.py:108 olive.glade:905 olive.glade:962 olive/remove.py:108
+#: olive/remove.py:109
+msgid "_Remove"
+msgstr ""
+
+#: rename.py:75 olive/rename.py:75 olive/rename.py:76
+msgid "Filename not given"
+msgstr ""
+
+#: rename.py:76 olive/rename.py:76 olive/rename.py:77
+msgid "Please specify a new name for the file."
+msgstr ""
+
+#: olive.glade:8
+msgid "Olive - Bazaar GUI"
+msgstr ""
+
+#: olive.glade:21
+msgid "_File"
+msgstr ""
+
+#: olive.glade:28
+msgid "_Add file(s)..."
+msgstr ""
+
+#: olive.glade:43
+msgid "Remove file(s)..."
+msgstr ""
+
+#: olive.glade:63 olive.glade:71
+msgid "Make _directory..."
+msgstr ""
+
+#: olive.glade:76 olive.glade:84
+msgid "_Rename..."
+msgstr ""
+
+#: olive.glade:84 olive.glade:92
+msgid "_Move..."
+msgstr ""
+
+#: olive.glade:92 olive.glade:100
+msgid "_Annotate..."
+msgstr ""
+
+#: olive.glade:118 olive.glade:126
+msgid "_View"
+msgstr ""
+
+#: olive.glade:126 olive.glade:134
+msgid "Show _hidden files"
+msgstr ""
+
+#: olive.glade:139 olive.glade:155
+msgid "_Refresh"
+msgstr ""
+
+#: olive.glade:158 olive.glade:174
+msgid "_Initialize..."
+msgstr ""
+
+#: olive.glade:166 olive.glade:182
+msgid "_Get..."
+msgstr ""
+
+#: olive.glade:174 olive.glade:190
+msgid "C_heckout..."
+msgstr ""
+
+#: olive.glade:187 olive.glade:203
+msgid "Pu_ll"
+msgstr ""
+
+#: olive.glade:201 olive.glade:217
+msgid "Pu_sh..."
+msgstr ""
+
+#: olive.glade:220 olive.glade:245
+msgid "_Revert all changes"
+msgstr ""
+
+#: olive.glade:228 olive.glade:253
+msgid "_Merge..."
+msgstr ""
+
+#: olive.glade:236 olive.glade:261
+msgid "_Commit..."
+msgstr ""
+
+#: olive.glade:255 olive.glade:280
+msgid "Ta_gs..."
+msgstr ""
+
+#: olive.glade:263 olive.glade:288
+msgid "S_tatus..."
+msgstr ""
+
+#: olive.glade:271 olive.glade:296
+msgid "Missing _revisions"
+msgstr ""
+
+#: olive.glade:279 olive.glade:304
+msgid "Con_flicts..."
+msgstr ""
+
+#: olive.glade:291 olive.glade:316
+msgid "_Statistics"
+msgstr ""
+
+#: olive.glade:298 olive.glade:323
+msgid "_Differences..."
+msgstr ""
+
+#: olive.glade:312 olive.glade:337
+msgid "_Log..."
+msgstr ""
+
+#: olive.glade:326 olive.glade:351
+msgid "_Information..."
+msgstr ""
+
+#: olive.glade:338 olive.glade:363
+msgid "_Help"
+msgstr ""
+
+#: olive.glade:548 olive.glade:590
+msgid "gtk-jump-to"
+msgstr ""
+
+#: olive.glade:575 olive.glade:618
+msgid "H_istory Mode"
+msgstr ""
+
+#: olive.glade:673 olive.glade:722
+msgid "Copyright (C) 2006 Szilveszter Farkas (Phanatic)"
+msgstr ""
+
+#: olive.glade:675 olive.glade:724
+msgid "https://launchpad.net/products/olive"
+msgstr ""
+
+#: olive.glade:677 olive.glade:726
+msgid "translator-credits"
+msgstr ""
+
+#: olive.glade:694 olive.glade:743
+msgid "Olive - Add file(s)"
+msgstr ""
+
+#: olive.glade:705 olive.glade:754
+msgid "Which file(s) do you want to add?"
+msgstr ""
+
+#: olive.glade:731 olive.glade:781
+msgid "All unknowns recursively"
+msgstr ""
+
+#: olive.glade:785 olive.glade:838
+msgid "_Add"
+msgstr ""
+
+#: olive.glade:814 olive.glade:867
+msgid "Olive - Remove file(s)"
+msgstr ""
+
+#: olive.glade:934 olive.glade:991
+msgid "Olive - Make directory"
+msgstr ""
+
+#: olive.glade:957 olive.glade:1014
+msgid "_Versioned directory"
+msgstr ""
+
+#: olive.glade:1011 olive.glade:1071
+msgid "_Make directory"
+msgstr ""
+
+#: olive.glade:1041 olive.glade:1101
+msgid "Olive - Move"
+msgstr ""
+
+#: olive.glade:1055 olive.glade:1115
+msgid "Move to"
+msgstr ""
+
+#: olive.glade:1066 olive.glade:1126
+msgid "Select a directory"
+msgstr ""
+
+#: olive.glade:1120 olive.glade:1182
+msgid "_Move"
+msgstr ""
+
+#: olive.glade:1148 olive.glade:1210
+msgid "Olive - Rename"
+msgstr ""
+
+#: olive.glade:1162 olive.glade:1224
+msgid "Rename to"
+msgstr ""
+
+#: olive.glade:1227 olive.glade:1291
+msgid "_Rename"
+msgstr ""
+
+#: olive.glade:1255 olive.glade:1319
+msgid "Olive - Information"
+msgstr ""
+
+#: olive.glade:1279 olive.glade:1292 olive.glade:1305 olive.glade:1318
+#: olive.glade:1331 olive.glade:1344 olive.glade:1357 olive.glade:1484
+#: olive.glade:1495 olive.glade:1564 olive.glade:1575 olive.glade:1588
+#: olive.glade:1601 olive.glade:1694 olive.glade:1705 olive.glade:1718
+#: olive.glade:1799 olive.glade:1810 olive.glade:1879 olive.glade:1890
+#: olive.glade:1903 olive.glade:1916 olive.glade:1929 olive.glade:1942
+#: olive.glade:1955 olive.glade:1968 olive.glade:2109 olive.glade:2120
+#: olive.glade:2133 olive.glade:2146 olive.glade:2159 olive.glade:2264
+#: olive.glade:2275 olive.glade:1343 olive.glade:1356 olive.glade:1369
+#: olive.glade:1382 olive.glade:1395 olive.glade:1408 olive.glade:1421
+#: olive.glade:1548 olive.glade:1559 olive.glade:1628 olive.glade:1639
+#: olive.glade:1652 olive.glade:1665 olive.glade:1758 olive.glade:1769
+#: olive.glade:1782 olive.glade:1863 olive.glade:1874 olive.glade:1943
+#: olive.glade:1954 olive.glade:1967 olive.glade:1980 olive.glade:1993
+#: olive.glade:2006 olive.glade:2019 olive.glade:2032 olive.glade:2173
+#: olive.glade:2184 olive.glade:2197 olive.glade:2210 olive.glade:2223
+#: olive.glade:2328 olive.glade:2339
+msgid "(none)"
+msgstr ""
+
+#: olive.glade:1368 olive.glade:1432
+msgid "Checkout root: "
+msgstr ""
+
+#: olive.glade:1380 olive.glade:1444
+msgid "Branch root: "
+msgstr ""
+
+#: olive.glade:1392 olive.glade:1456
+msgid "Repository checkout: "
+msgstr ""
+
+#: olive.glade:1404 olive.glade:1468
+msgid "Checkout of branch: "
+msgstr ""
+
+#: olive.glade:1416 olive.glade:1480
+msgid "Repository branch: "
+msgstr ""
+
+#: olive.glade:1428 olive.glade:1492
+msgid "Shared repository: "
+msgstr ""
+
+#: olive.glade:1440 olive.glade:1504
+msgid "Light checkout root: "
+msgstr ""
+
+#: olive.glade:1454 olive.glade:1518
+msgid "<b>Location:</b>"
+msgstr ""
+
+#: olive.glade:1508 olive.glade:1572
+msgid "Publish to branch: "
+msgstr ""
+
+#: olive.glade:1520 olive.glade:1584
+msgid "Parent branch: "
+msgstr ""
+
+#: olive.glade:1534 olive.glade:1598
+msgid "<b>Related branches:</b>"
+msgstr ""
+
+#: olive.glade:1614 olive.glade:1678
+msgid "Repository format: "
+msgstr ""
+
+#: olive.glade:1626 olive.glade:1690
+msgid "Branch format: "
+msgstr ""
+
+#: olive.glade:1638 olive.glade:1702
+msgid "Working tree format: "
+msgstr ""
+
+#: olive.glade:1650 olive.glade:1714
+msgid "Control format: "
+msgstr ""
+
+#: olive.glade:1664 olive.glade:1728
+msgid "<b>Format:</b>"
+msgstr ""
+
+#: olive.glade:1731 olive.glade:1795
+msgid "Repository lock status: "
+msgstr ""
+
+#: olive.glade:1743 olive.glade:1807
+msgid "Branch lock status: "
+msgstr ""
+
+#: olive.glade:1755 olive.glade:1819
+msgid "Working tree lock status: "
+msgstr ""
+
+#: olive.glade:1769 olive.glade:1833
+msgid "<b>Lock status:</b>"
+msgstr ""
+
+#: olive.glade:1823 olive.glade:1887
+msgid "Missing revisions in branch: "
+msgstr ""
+
+#: olive.glade:1835 olive.glade:1899
+msgid "Missing revisions in working tree: "
+msgstr ""
+
+#: olive.glade:1849 olive.glade:1913
+msgid "<b>Missing revisions:</b>"
+msgstr ""
+
+#: olive.glade:1981 olive.glade:2045
+msgid "Versioned subdirectories: "
+msgstr ""
+
+#: olive.glade:1993 olive.glade:2057
+msgid "Ignored files: "
+msgstr ""
+
+#: olive.glade:2005 olive.glade:2069
+msgid "Unknown files: "
+msgstr ""
+
+#: olive.glade:2017 olive.glade:2081
+msgid "Renamed files: "
+msgstr ""
+
+#: olive.glade:2029 olive.glade:2093
+msgid "Removed files: "
+msgstr ""
+
+#: olive.glade:2041 olive.glade:2105
+msgid "Added files: "
+msgstr ""
+
+#: olive.glade:2053 olive.glade:2117
+msgid "Modified files: "
+msgstr ""
+
+#: olive.glade:2065 olive.glade:2129
+msgid "Unchanged files: "
+msgstr ""
+
+#: olive.glade:2079 olive.glade:2143
+msgid "<b>In the working tree:</b>"
+msgstr ""
+
+#: olive.glade:2172 olive.glade:2236
+msgid "Time of last revision: "
+msgstr ""
+
+#: olive.glade:2184 olive.glade:2248
+msgid "Time of first revision: "
+msgstr ""
+
+#: olive.glade:2196 olive.glade:2260
+msgid "Age of branch in days: "
+msgstr ""
+
+#: olive.glade:2208 olive.glade:2272
+msgid "Number of commiters: "
+msgstr ""
+
+#: olive.glade:2220 olive.glade:2284
+msgid "Revisions in branch: "
+msgstr ""
+
+#: olive.glade:2234 olive.glade:2298
+msgid "<b>Branch history:</b>"
+msgstr ""
+
+#: olive.glade:2288 olive.glade:2352
+msgid "Size of repository: "
+msgstr ""
+
+#: olive.glade:2300 olive.glade:2364
+msgid "Revisions in repository: "
+msgstr ""
+
+#: olive.glade:2314 olive.glade:2378
+msgid "<b>Revision store:</b>"
+msgstr ""
+
+#: olive.glade:2356 olive.glade:2421
+msgid "Merge - Olive"
+msgstr ""
+
+#: olive.glade:2370 olive.glade:2435
+msgid "Merge from:"
+msgstr ""
+
+#: olive.glade:2454 olive.glade:2522
+msgid "_Merge"
+msgstr ""
+
+#: olive.glade:63
+msgid "_Bookmark current directory"
+msgstr ""
+
+#: olive.glade:142
+msgid "Show _ignored files"
+msgstr ""
+
+#: olive.glade:232 olive.glade:486
+msgid "Update"
+msgstr ""
+
+#: commit.py:172 commit.py:173
+msgid "kind changed"
+msgstr ""
+
+#: commit.py:260 commit.py:261
+msgid "<b>Commit Message</b>"
+msgstr ""
+
+#: commit.py:363 commit.py:364
+msgid "Files"
+msgstr ""
+
+#: commit.py:368 commit.py:369
+msgid "Commit all changes"
+msgstr ""
+
+#: commit.py:374 commit.py:375
+msgid "Only commit selected changes"
+msgstr ""
+
+#: commit.py:380 commit.py:381
+msgid "Commit all changes*"
+msgstr ""
+
+#: commit.py:413 commit.py:414
+msgid "Commit*"
+msgstr ""
+
+#: commit.py:454 commit.py:455
+msgid "<i>* Cannot select specific files when merging</i>"
+msgstr ""
+
+#: commit.py:458 commit.py:459
+msgid "Pending Revisions"
+msgstr ""
+
+#: commit.py:494 commit.py:495
+msgid "Diff for whole tree"
+msgstr ""
+
+#: commit.py:518 commit.py:599 commit.py:519 commit.py:601
+msgid "File commit message"
+msgstr ""
+
+#: commit.py:525 commit.py:526
+msgid "Global Commit Message"
+msgstr ""
+
+#: commit.py:526 commit.py:528
+msgid "<b>Global Commit Message</b>"
+msgstr ""
+
+#: commit.py:552 commit.py:554
+msgid "Diff for "
+msgstr ""
+
+#: commit.py:605 commit.py:607
+msgid "Commit message for "
+msgstr ""
+
+#: commit.py:690 commit.py:692
+msgid "There are no changes in the working tree. Do you want to commit anyway?"
+msgstr ""
+
+#: branchview/treeview.py:400 branchview/treeview.py:402
+msgid "Please wait, loading ancestral graph..."
+msgstr ""
+
+#: olive/__init__.py:71 olive/__init__.py:72
+msgid "Lead Developer:"
+msgstr ""
+
+#: olive/__init__.py:73 olive/__init__.py:74
+msgid "Contributors:"
+msgstr ""
+
+#: olive/__init__.py:578 olive/__init__.py:579
+#, python-format
+msgid "%d local extra revision(s). \n"
+msgstr ""
+
+#: olive/__init__.py:590 olive/__init__.py:591
+#, python-format
+msgid "%d local missing revision(s).\n"
+msgstr ""
+
+#: olive/__init__.py:632 olive/__init__.py:633
+msgid "Update successful but conflicts generated"
+msgstr ""
+
+#: olive/__init__.py:632 olive/__init__.py:633
+#, python-format
+msgid "Number of conflicts generated: %d."
+msgstr ""
+
+#: olive/__init__.py:634 olive/__init__.py:635
+msgid "Update successful"
+msgstr ""
+
+#: olive/__init__.py:634 olive/__init__.py:635
+msgid "No conflicts generated."
+msgstr ""

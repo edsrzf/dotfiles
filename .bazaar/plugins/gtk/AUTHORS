@@ -1,0 +1,20 @@
+bzr-gtk is a plugin that is based on a collection of earlier plugins for 
+Bazaar. It was originally developed by Jelmer Vernooij <jelmer@samba.org> and 
+Szilveszter Farkas <Szilveszter.Farkas@gmail.com> but is now maintained 
+by a team of developers; see https://launchpad.net/~bzr-gtk/+members for 
+a list
+
+bzrk was written by Scott James Remnant <scott@ubuntu.com>. 
+It's vaguely based on a screenshot of gitk (the equivalent tool for git)
+shown to me by Fabio M. Di Nitto <fabbione@ubuntu.com>.
+
+gannotate was written by Dan Loda <danloda@gmail.com> and later maintained 
+by Aaron Bentley <abentley@panoramicfeedback.com>.
+
+nautilus-bzr was written by Jelmer Vernooij and Jeff Bailey.
+
+The tag icon was created by Jakub Steiner.
+The bug icon was created by Josef Vybíral.
+
+Numerous other people have contributed useful patches.  See the Bazaar history 
+of this branch for a full list of authors.

@@ -1,0 +1,134 @@
+bzr-gtk - GTK+ Frontends to various Bazaar commands
+===================================================
+
+This is a plugin for bzr that contains various GTK+ frontends to 
+Bazaar commands. It currently contains a tool to see the history
+and relationships between the revisions visually and one to 
+view annotated files.
+
+
+Dependencies
+------------
+
+bzr-gtk is written in Python, so doesn't need compiling, however you will
+need the following runtime dependencies:
+
+  * Python 2.4
+  * Bazaar with the same major version as bzr-gtk
+  * PyGTK 2.8 or later
+
+In order to see graphs in the visualisation tool, you will also need:
+
+  * PyCairo 1.0 or later
+
+In order to see syntax highlighted diffs:
+
+  * GtkSourceView2 Python bindings (on Debian and Ubuntu systems, these
+    are in the python-gtksourceview2 package)
+
+In order to use the nautilus integration, you will need:
+
+ * python-nautilus
+
+For Olive on Windows:
+
+ * pyWin32 (tested with build 209)
+
+Installation
+------------
+
+The easiest way to install bzr-gtk is to either copy or symlink the
+directory into your ~/.bazaar/plugins directory.
+
+Other ways include doing the same in the bzrlib/plugins directory of
+your bzr working tree, or adding the location of bzr-gtk to your
+BZR_PLUGIN_PATH environment variable.
+
+Note: the plugin directory of bzr-gtk must be called 'gtk'.
+
+To use the nautilus integration, either place the nautilus-bzr.py file in
+~/.nautilus/python-extensions or in /usr/lib/nautilus/extensions-1.0/python
+
+Please note that python-nautilus currently uses the .so file of Python 
+so you will need to have python-dev installed or you need to manually create a 
+libpythonVER.so symlink in /usr/lib (where VER is your version of python, e.g.
+2.4 or 2.5).
+
+Usage - Visualisation
+---------------------
+
+Simply run "bzr visualise" (or "bzr viz") while in a bzr working tree or
+branch, a window will appear with the history of the branch and a graph
+connecting the individual revisions.
+
+You can move through the revision history by clicking or with the arrow
+keys.  You can also use the Back (shortcut '[') and Forward (shortcut ']')
+buttons which move to the previous and next revision from that selected
+(which may not be immediately adjacent in the list).
+
+Details for the selected revision are shown in the pane at the bottom,
+including the ids of the parent revisions.  Clicking on the go icon next
+to a parent moves the list to that revision; clicking on the view icon
+opens a window to display the difference between the two revisions.
+
+Usage - annotate
+----------------
+
+Simply run "bzr gannotate FILENAME" while in a bzr working tree or branch.
+ 
+The commit log message is shown in the lower window pane for the selected
+line.  The line number column is searchable; jump to a specific line by typing
+the line number while the annotation pane is in focus. Control-f will also
+initiate a search.
+
+By default, lines are highlighted according to age. This functionality is a
+crib of emacs' VC-annotate highlighting, and thus works similarly: blue is
+oldest and red is youngest, and an assortment of other colors in-between:
+
+        blue --> green --> yellow --> orange --> red
+
+Time spans are scaled; for instance by selecting "1 Day", lines older than a
+day will be highlighted blue, but changes in the past hour will be red and
+lines 2 hours old may be orange. Highlighting can be turned off with --plain
+if overwhelming.
+
+Usage - diff window
+-------------------
+
+If you have the gtksourceview python bindings installed, the diff window
+will have syntax highlighting. If the python GConf bindings are installed, 
+the colors will be read from gedit's syntax highlighting configuration
+for the "Diff" language.
+
+Afterwards, colors from the ~/.colordiffrc file will be read, and will
+override gedit's. Since that file may be written for a dark background
+environment, the file ~/.colordiffrc.bzr-gtk can be used to override
+some values.
+
+Because gtksourceview is more configurable that colordiff, in addition
+to the 'oldtext', 'newtext', and 'diffstuff' keys, the following keys
+are also accepted: 'location', 'file', 'specialcase'.
+
+Colors can be specified with names (valid names are those in the
+/usr/share/X11/rgb.txt file), or with a #RRGGBB notation.
+
+Install on Windows
+------------------
+
+You can download the dependencies from the following locations:
+
+ - Python: http://www.python.org/download/releases/2.4.3/
+ - GTK: http://gladewin32.sourceforge.net/
+ - PyGTK: http://www.mapr.ucl.ac.be/~gustin/win32_ports (pygtk, pygobject and pycairo)
+ - Bazaar: http://bazaar-vcs.org/WindowsDownloads (Python-based should be okay)
+ - pyWin32: http://sourceforge.net/project/showfiles.php?group_id=78018
+
+As an Administrator, you can install Olive with the standard command:
+
+ > c:\Python24\python.exe setup.py install
+
+You can run Olive with this command:
+
+ > c:\Python24\python.exe c:\Python\Scripts\olive-gtk
+
+

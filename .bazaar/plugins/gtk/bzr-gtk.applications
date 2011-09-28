@@ -1,0 +1,7 @@
+bzr-gtk-patch
+	command=bzr-handle-patch
+	name=Bazaar
+	can_open_multiple_files=false
+	expects_uris=false
+	requires_terminal=false
+	mime_types=text/x-diff,text/x-patch,application/x-bazaar-merge-directive

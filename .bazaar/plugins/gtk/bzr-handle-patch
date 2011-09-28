@@ -1,0 +1,39 @@
+#!/usr/bin/python
+
+from bzrlib import errors, merge_directive
+from bzrlib.plugin import load_plugins
+from bzrlib.plugins.gtk import open_display
+load_plugins()
+
+import sys
+
+if len(sys.argv) < 2:
+	print "Usage: handle-patch <path>"
+	sys.exit(1)
+
+
+path = sys.argv[1]
+
+try:
+	from bzrlib.plugins.gtk.diff import (DiffController,
+										 MergeDirectiveController)
+	if path == '-':
+		lines = sys.stdin.readlines()
+	else:
+		lines = open(path, 'rb').readlines()
+	lines = [l.replace('\r\n', '\n') for l in lines]
+	try:
+		directive = merge_directive.MergeDirective.from_lines(lines)
+	except errors.NotAMergeDirective:
+		controller = DiffController(path, lines, allow_dirty=True)
+	else:
+		controller = MergeDirectiveController(path, directive)
+	window = controller.window
+	window.show()
+	gtk = open_display()
+	window.connect("destroy", gtk.main_quit)
+except Exception, e:
+	from bzrlib.plugins.gtk.dialog import error_dialog
+	error_dialog('Error', str(e))
+	raise
+gtk.main()

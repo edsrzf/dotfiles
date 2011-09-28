@@ -1,0 +1,92 @@
+#!/usr/bin/env python
+
+"""Run the bzr tray icon.
+
+This is a background program which will pop up a notification on the users
+screen when a commit occurs.
+"""
+
+from bzrlib.plugin import load_plugins
+load_plugins()
+
+from bzrlib.plugins.gtk import open_display, icon_path
+
+from bzrlib.plugins.gtk.notify import NotifyPopupMenu
+gtk = open_display()
+
+import cgi
+import dbus
+import dbus.service
+import gobject
+import pynotify
+from bzrlib.bzrdir import BzrDir
+from bzrlib.osutils import format_date
+from bzrlib.transport import get_transport
+
+menu = NotifyPopupMenu()
+try:
+    import appindicator
+except ImportError:
+    icon = gtk.status_icon_new_from_icon_name("bzr-panel")
+    icon.connect('popup-menu', menu.display)
+    icon.set_visible(False)
+    hide_icon = lambda: icon.set_visible(False)
+    show_icon = lambda: icon.set_visible(True)
+else:
+    indicator = appindicator.Indicator ("bzr-gtk-notify",
+        "bzr-panel", appindicator.CATEGORY_OTHER)
+    indicator.set_status (appindicator.STATUS_PASSIVE)
+    indicator.set_attention_icon("bzr-panel")
+    indicator.set_menu(menu)
+    hide_icon = lambda: indicator.set_status (appindicator.STATUS_PASSIVE)
+    show_icon = lambda: indicator.set_status (appindicator.STATUS_ATTENTION)
+
+if getattr(dbus, 'version', (0,0,0)) >= (0,41,0):
+    import dbus.glib
+BROADCAST_INTERFACE = "org.bazaarvcs.plugins.dbus.Broadcast"
+bus = dbus.SessionBus()
+
+def catch_branch(revision_id, urls):
+    # TODO: show all the urls, or perhaps choose the 'best'.
+    url = urls[0]
+    try:
+        if isinstance(revision_id, unicode):
+            revision_id = revision_id.encode('utf8')
+        transport = get_transport(url)
+        a_dir = BzrDir.open_from_transport(transport)
+        branch = a_dir.open_branch()
+        revno = branch.revision_id_to_revno(revision_id)
+        revision = branch.repository.get_revision(revision_id)
+        summary = 'New revision %d in %s' % (revno, url)
+        body = 'Committer: %s\n' % revision.committer
+        body += 'Date: %s\n' % format_date(revision.timestamp,
+            revision.timezone)
+        body += '\n'
+        body += revision.message
+        body = cgi.escape(body)
+        nw = pynotify.Notification(summary, body)
+        def start_viz(notification=None, action=None, data=None):
+            """Start the viz program."""
+            from bzrlib.plugins.gtk.commands import start_viz_window
+            pp = start_viz_window(branch, revision_id)
+            pp.show()
+        def start_branch(notification=None, action=None, data=None):
+            """Start a Branch dialog"""
+            from bzrlib.plugins.gtk.branch import BranchDialog
+            bd = BranchDialog(remote_path=url)
+            bd.run()
+        if "actions" in pynotify.get_server_caps():
+            nw.add_action("inspect", "Inspect", start_viz, None)
+            nw.add_action("branch", "Branch", start_branch, None)
+        show_icon()
+        gobject.timeout_add(5000, hide_icon)
+        nw.set_timeout(5000)
+        nw.show()
+    except Exception, e:
+        print e
+        raise
+bus.add_signal_receiver(catch_branch,
+                        dbus_interface=BROADCAST_INTERFACE,
+                        signal_name="Revision")
+pynotify.init("bzr-notify")
+gtk.main()

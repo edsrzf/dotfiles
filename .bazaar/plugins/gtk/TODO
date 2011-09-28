@@ -1,0 +1,28 @@
+TODO list for Bzr-Gtk
+---------------------
+
+- List unknown files in commit dialog
+- Allow merging revisions from missing dialog
+- It should be possible to add unknown files from the commit dialog.
+  Deleting selected unknown files should be also possible ?
+- Eliminate radiobuttons in push but rather show the default location and 
+  allow the user to change it
+- Remove the status window as it's pointless since the status is already shown
+  in the main window.
+- Is there any reason why on win32 bzr branches have to be on fixed drives and 
+  not on, e.g., cdroms?
+- Dialog for applying a bundle
+- Switch dialog
+- Ability to bind/unbind the branch
+- List Bzr options in context menu in a way that makes sense (alphabetically?)
+- Allow specifying two revisions in the diff window rather then always diffing between base and working tree
+- For performance BranchDialog should only open each url once. Once opened it
+  should keep a read lock open and only release this when the url is changed.
+  It should also allow the creator of the window to supply an already opened
+  branch, and a revision id.
+- olive-gtk: Allow diffing with external programs (kdiff3, meld? )
+  Allowing to revert parts of modified using external tools
+- olive-gtk: History of recently opened branches/checkouts
+- olive-gtk: Info about current director in status line (is it branch/checkout , parent branch/ checkout root)
+- olive-gtk: Info about dirs state (including summary of state files and dirs inside directory)
+- olive-gtk: mark modified, deleted files in dir with colors

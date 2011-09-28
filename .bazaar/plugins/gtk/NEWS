@@ -1,0 +1,773 @@
+0.100.0	2011-03-02
+
+ BUG FIXES
+
+  * make sure that gdiff opened from gannotate knows its parent
+    (gannotate, that is, and does not exit when it (gdiff) is closed.
+
+  * Clarify 'visualise' help about the multiple branches feature
+    and the --revision parameter. (Vincent Ladeuil, #556347)
+
+  * Mark as compatible with bzr 2.3. (Jelmer Vernooij)
+
+  * Fix appindicator icon category. (Michael Terry, #685634)
+
+  * Mark as compatible with Bazaar 2.4. (Jelmer Vernooij)
+
+  * "bzr viz" now shows authors instead of committers. (Jelmer Vernooij, #693949)
+
+  * Don't use markup for secondary text in error dialogs.
+    (Edward Ari Bichetero, #656641)
+
+  * Generate pickles file when running 'setup.py sdist'. (Jelmer Vernooij, #397526)
+
+ FEATURES
+ 
+  * Add lock dialog. (Daniel Schierbeck, #93652)
+
+0.99.1	2010-08-26
+
+ BUG FIXES
+
+  * Trivial release to include credits pickle file.
+
+   * Mark as compatible with Bazaar 2.3. (Vincent Ladeuil)
+
+0.99.0 2010-08-13
+
+ BUG FIXES
+
+   * Guard setup() call when not loaded as __main__. (Robert Collins)
+
+   * Ignore gnomekeyring.IOError when checking if credentials are available
+     in the GNOME keyring. (Jelmer Vernooij, #534326)
+
+   * Don't crash when there is already a lan-notify instance running.
+     (Jelmer Vernooij, #339284)
+
+   * Return the credentials if successfully found in gnome-keyring.
+     (John Szakmeister)
+
+   * Support non-bzr patches. (Toshio Kuratomi, #502076)
+
+   * Avoid using private functions to get branch config. (Jelmer Vernooij,
+     #583554)
+
+   * Mark as compatible with Bazaar 2.2. (Martin Pool, #597379)
+
+FEATURES
+
+  * Add 'Find' button to start text search.
+    (Martin Pool, #556347)
+
+  * Add 'glog' as an alias for visualize (aka viz) as too many
+    people are still confused.
+    (Vincent Ladeuil)
+
+  * Add support for Indicator Application (Sense Hofstede, Jelmer Vernooij,
+    #518179)
+
+  * Add more tooltips to Olive. (Adrian Room, #333876)
+
+0.98.0 2010-02-24
+
+BUG FIXES
+
+  * Fix relative import in olive menu.
+    (Mathias Brodala, #269883)
+
+  * Fix typo in checkout dialog.
+    (Jasper Groenewegen, #466507)
+
+  * Adds help for ginit and gtags.
+    (Andrew Starr-Bochicchio, #512701)
+
+0.97.0 2009-08-25
+
+BUG FIXES
+
+  * Avoid GnomeKeyringCredentialStore traceback on Ubuntu Hardy
+    by being more tolerant about gobject methods availability.
+    (Vincent Ladeuil, #403430)
+  
+  * Fixed emblem and nautilus bzr-status column for ignored files.
+    (Lucas Shrewsbury, #294632)
+    
+  * Fixed emblem and nautilus bzr-status column for unversioned files.
+    (Lucas Shrewsbury, #417966)
+
+  * Switch to using disutils sdist instead of bzr export.
+    (Mark Lee, #398242)
+
+0.96.2	2009-07-08
+
+ BUG FIXES
+
+  * Same player shoots again. Version credits.pickle and rebuild the tarball
+    after running 'python ./setup.py build_credits', update
+    http://bazaar-vcs.org/bzr-gtk/releasing accordingly.  
+    (Vincent Ladeuil, #397526)
+ 
+0.96.1	2009-07-08
+
+ BUG FIXES
+ 
+  * Rebuild the tarball after running 'python ./setup.py build_credits',
+    update http://bazaar-vcs.org/bzr-gtk/releasing accordingly.
+   (Vincent Ladeuil, #397526)
+ 
+
+0.96.0	2009-07-08
+
+ UI
+ 
+  * Add colored status messages in Olive file list (Jasper Groenewegen)
+
+  * Use the new progress bar implementation from bzrlib.
+   (Vincent Ladeuil, 385191)
+
+ CHANGES
+ 
+  * Add ginfo command line option (Jasper Groenewegen)
+  
+  * Diff window uses GtkSourceView2 now. (Szilveszter Farkas)
+
+ BUG FIXES
+ 
+  * Fix the Branch/Get dialog refusing to open after hitting Cancel. (Markus
+  Korn, #294396)
+
+  * Fix Olive homepage URL. (#255152)
+
+  * Fix gannotate.conf handling. (Vincent Ladeuil, #373157)
+
+  * Save commit messages at uncommit time, restore them at
+    gcommit time. Also allow saving commit messages if the commit
+    is cancelled. (Anne Mohsen, Vincent Ladeuil, #215674)
+
+  * Mark as compatible with bzr 1.13.
+
+ FEATURES
+
+  * Support storing credentials in the GNOME Keyring if it is 
+    available. (Jelmer Vernooij)
+
+  * Fix opening Status window in Olive (#316310)
+
+0.95.0	2008-08-04
+
+ UI
+
+  * Added Refresh menu option with F5 keyboard shortcut (Russ Brown)
+
+  * Show progress bars in bzr viz window (Chad Miller, Jelmer Vernooij)
+
+  * Added menu option for indexing branches if bzr-search is present.
+    (Jelmer Vernooij)
+
+  * Add "Send Merge Directive" button in bzr viz. (Jelmer Vernooij)
+
+  * Remove dummy "Edit->Find" option. (Jelmer Vernooij)
+
+  * Added an optional diff panel to bzr vis.  (Scott Scriven)
+
+  * Made bzr vis remember whether the toolbar is visible.  (Scott Scriven)
+
+  * Made bzr vis remember window and panel sizes.  (Scott Scriven)
+
+  * Sort Olive bookmarks by title (Jasper Groenewegen)
+  
+  * Add controls to wrap long lines in gdiff and diff in visualise. (Jasper Groenewegen, #229789)
+  
+  * Made merge dialog to give choice between folder and custom location (Jasper Groenewegen)
+
+  * Add new dialog to browse looms and switch to threads in loom branches. (Jelmer Vernooij)
+  
+  * Show status for folders in Olive file list (Jasper Groenewegen)
+  
+  * Change appearance Olive bookmarks (Jasper Groenewegen)
+  
+  * Add ability to have dialog popup from Olive location bar. (Jasper Groenewegen)
+
+ BUG FIXES
+
+  * Replace _() calls by _i18n() calls. (Vincent Ladeuil, #187283)
+  
+  * Fixed adding tags. (Javier Derderian, #228709)
+
+  * Fix history mode button. (Jasper Groenewegen, #144962)
+
+  * Fixed handle-patch script. (Jelmer Vernooij)
+
+  * Fix import in olive. (Jelmer Vernooij, #223935)
+
+  * Avoid use of removed smart_add. (Jelmer Vernooij, #244025, #244027)
+
+  * Remove use of upstream removed Repository.revision_parents() 
+    (Jelmer Vernooij)
+
+  * List network drives in Olive. (Kevin Light, #244308)
+
+  * Fix progress bar handling. (Jelmer Vernooij)
+
+  * Fix broken symlink handling. (Jasper Groenewegen)
+
+  * Fix import in Olive rename dialog. (Kevin Light)
+
+  * Removed some redundant screen redrawing in bzr vis.  (Scott Scriven)
+
+  * Fixed overflowing labels in bzr vis.  (Scott Scriven)
+
+  * Fix plugin description in gpreferences. (Jasper Groenewegen, #232191)
+
+  * Remove question for setting default push location. (Jasper Groenewegen, #151818)
+
+  * Automatically change to history mode on selecting a revision from the list. (Jasper Groenewegen, #144963)
+
+  * Check if file is versioned before opening gannotate window from olive. (Jasper Groenewegen, #115358)
+  
+  * Make sure error/info/warning dialogs know their parent window. (Jasper Groenewegen, #252208)
+  
+  * Handle unreadable .bzr subfolder in Olive. (Jasper Groenewegen, #229044)
+
+  * Import gobject in bzr-notify, as it is used there to set a timeout. (James Westby)
+
+ CHANGES
+
+  * Moved notify icon code to separate script. (Jelmer Vernooij)
+
+  * Verify testaments when showing signatures on revisions and
+    re-enable signature display. (Jelmer Vernooij)
+
+  * Show credits for bzr-gtk in the about dialog. (Jelmer Vernooij)
+  
+  * Add gmerge command line option (Jasper Groenewegen, #124760)
+
+ INTERNALS
+
+  * All i18n calls should now go through _i18n which must be imported from
+    bzrlib.plugins.gtk. This addresses the occasional collisions with '_' used
+    as an anonymous variable. (Vincent Ladeuil)
+
+  * Add test for linegraph code. (Jelmer Vernooij)
+
+  * Remove obsolete tortoisebzr tests. (Jelmer Vernooij)
+
+  * Share revision context menu and main revision menu in bzr viz. (Jelmer Vernooij)
+
+  * Remove glade from merge dialog. (Jasper Groenewegen)
+
+  * Remove glade from olive about, rename, remove, move, mkdir, add dialogs. (Jasper Groenewegen)
+
+  * Remove glade from olive main window (Jasper Groenewegen)
+  
+  * Remove glade from olive info dialog (Jasper Groenewegen)
+
+  * Rewrite Olive mouse button event handling (Kevin Light)
+  
+0.94.0    2008-05-04
+
+ CHANGES
+
+  * Disabled signature tab until we start verifying testaments. 
+    (Jelmer Vernooij)
+
+ BUG FIXES
+
+  * Fix display of children in branchview. (Jelmer Vernooij, #224914)
+
+0.94.0rc1  2008-04-25
+
+ CHANGES
+
+  * Removed tortoise-bzr, which now has its own project (http://launchpad.net/tortoisebzr)
+
+  * Use new D-Bus revision signal. (James Henstridge, #206443)
+
+ UI
+
+  * Made the tags associated with a revision render next to the revision
+    node in the branch view. (Ali Sabil)
+
+  * Made the tag list in the revision view be comma-separated. (Daniel Schierbeck)
+
+  * Add bugs tab in the branch view. (Jelmer Vernooij)
+  
+  * New Tango-styled icons. This time properly licensed under the GPL.
+    (Simon Pascal Klein)
+
+  * Support showing multiple branches in "bzr viz". (Jelmer Vernooij
+
+  * Added new icons for nautilus overlay (Martin Albisetti)
+
+  * Added enable/disable per-branch option (Martin Albisetti)
+
+  * Add compare with option to revisions menu. (Javier Derderian)
+
+  * Register file handler for applying patches/bundles to Bazaar branches.
+    (Jelmer Vernooij)
+
+ BUG FIXES
+
+  * Make adding tags from the viz work again. (Daniel Schierbeck)
+ 
+  * Catch UnsupportedProtocol exception in the Nautilus extension. (#77965)
+  
+  * Make Nautilus extension work again. (#111826, Toshio Kuratomi, Jelmer Vernooij)
+  
+  * Make viz not throw errors when there are 0 commits. (#173698, Gary van der
+    Merwe)
+
+  * Fixed underscores in tags being interpreted as mnemonics in the viz. (#201733, 
+    Daniel Schierbeck)
+
+  * Fixed change view menu in viz. (Javier Derderian, #215350)
+
+ FEATURES
+ 
+  * Only check for old Bazaar versions that are known to be incompatible and 
+    no longer warn about newer (unknown) versions of Bazaar, on the assumption
+    the API is sufficiently stable now. (Jelmer Vernooij)
+
+  * Support child_submit_to setting in gsend. (Jelmer Vernooij)
+
+  * Add tab to revision view showing the signature status. (Daniel Schierbeck, Jelmer Vernooij)
+
+  * Use seahorse to verify signatures. (Daniel Schierbeck)
+
+ INTERNALS
+
+  * Refactored the revisionview. (Daniel Schierbeck)
+
+  * It is now possible to use the diff view as a widget. (Jelmer Vernooij)
+
+  * Preferences dialog has been split up. (Jelmer Vernooij)
+
+0.93.0  2007-12-10
+
+ UI
+
+  * Added a menu bar to the viz. (Daniel Schierbeck)
+     - Select a revision by tag.
+     - Show/hide tree view columns.
+
+ BUG FIXES
+
+  * Make toolbars in Olive follow GNOME standards. (#137074)
+
+ INTERNALS
+
+  * Allow test suite to run without PyGTK. (Aaron Bentley)
+
+0.92.1  2007-11-10
+
+ BUG FIXES
+ 
+  * Fixed logview bug in gannotate. (Daniel Schierbeck)
+
+0.92.0    2007-11-07
+
+ UI
+
+  * Removed email part of committer id from committer column in the revision
+    history window. (Daniel Schierbeck)
+    
+  * Removed date column from revision history window. (Daniel Schierbeck)
+  
+  * Rearranged the logview into a notebook. (Daniel Schierbeck)
+  
+  * Redesigned the Commit dialog. (John Arbash Meinel)
+  
+  * Broken lines support made optional. (Daniel Schierbeck)
+
+ FEATURES
+ 
+  * Rewrite of a large ammount of the viz code:
+        * Make use of the bzrlib.tsort.merge_sort for sorting the revisions.
+        * A new algorithm to work out how to draw the lines using the
+          revsion numbers returned from merge_sort.
+        * Lines that are very long are broken, which results in the graph
+          requiring less space to render and the graph is easier to interpret.
+          (#82907)
+        * Choose the color for a branch from the revsion number, which results
+          in stable colors. Revisions on the mainline are allways black.
+        * Implement a TreeModel that loads the revision data only when a a
+          revision is scrolled into view, improving the time it takes to display
+          the first screen of data by 92%. (#124143)
+        * Add a column to display the revision number. (#64167)
+        * Add buttons to navigate to child revisions.
+    (Gary van der Merwe)
+
+  * Added a revert option to the revision menu. (Gary van der Merwe)
+
+ BUG FIXES
+
+  * Show children on new row in table to avoid very broad windows in viz. 
+    (Jelmer)
+
+  * viz slow when run from olive. (#70463, Gary van der Merwe)
+  
+  * Make it possible to open diff from the commit window when there are pending
+    merges. (Gary van der Merwe)
+    
+ INTERNALS
+
+  * Use standard version tuple. (Jelmer)
+
+  * Add check command to setup.py. (Jelmer)
+
+  * Avoid deprecation warning for all_plugins() in gpreferences. (Jelmer)
+
+0.91.0    2007-09-24
+
+ UI
+
+  * Added keyboard shortcuts for closing windows and exiting Olive.
+    (#139559, Daniel Schierbeck)
+  * Add a message to the viz window to indicate that the graph is still loading.
+    (Gary van der Merwe)
+ 
+  * The tip revision will be automatically selected in the branch visualization
+    window. (#144244, Daniel Schierbeck)
+  
+  * Updated olive-gtk.desktop: Polish translation and additional categories.
+    (Mateusz Korniak)
+ 
+ BUG FIXES
+
+  * Fix the "Complete Diff" entry in DiffWindow to show the whole diff.
+    (#140512, James Westby) 
+ 
+  * Right-clicking in Olive's file list works again. (#136310, Mark Lee)
+  
+  * Annotate context menu works again. (Daniel Schierbeck)
+  
+  * Fixed push (with overwite) behavior when branches are diverged.
+    (Mateusz Korniak)
+  
+  * Local missing revisions are remote extra revisions (Missing revisions menu
+    item in Olive). (Mateusz Korniak)
+ 
+ INTERNALS
+ 
+  * `bzr viz --limit` much more faster than before. (John Arbash Meinel)
+
+  * Use get_apparent_author, rename variables to 'author'. (Aaron Bentley)
+  
+  * Added default_branch_path to MergeDialog and use it from olive-gtk.
+    (Mateusz Korniak)
+
+0.90.0    2007-08-27
+
+ FEATURES
+
+  * Add ability to hide ignored files in Olive (#134121, Tom Badran)
+
+  * Show tags in bzr viz. (Jelmer)
+
+  * Handle large files correctly in Olive. (#127392, Mateusz Korniak)
+
+  * Add remove and delete menu item in Olive. (#127381, Mateusz Korniak)
+  
+  * Added "update" menu item in Olive. (Mateusz Korniak)
+  
+  * New Olive application icon. (Simon Pascal Klein and Jakub Steiner)
+  
+  * Show bzr viz interface quickly. (Gary van der Merwe)
+
+ UI
+  
+  * Improve Preferences dialog layout. (Jelmer)
+
+ INTERNALS:
+ 
+  * Updated pot generator script and regenerated the translation template.
+    (Szilveszter)
+
+  * Add helper widget for selecting branches (Jelmer)
+    
+ BUG FIXES
+ 
+  * Support DBus being present but NetworkManager missing. (#126767, Mateusz
+  Korniak, Jelmer)
+
+  * Fixed interface to push.PushDialog (Mateusz Korniak)
+
+  * Fix so the when Olive is run from the source code, the toolbar and menu
+    icons show. (Gary van der Merwe, #131520)
+
+  * Fix a regression that Olive was no longer able to find bzrlib location
+    due to a change in the output of "bzr version". (Gary van der Merwe)
+
+  * Fix a regression that Olive branch info window was not working. (Gary van
+    der Merwe)
+    
+  * Fixed tags formatting. (Aaron)
+
+0.18.0  2007-07-17
+
+ FEATURES
+
+  * Add support for customizing colors in the diff window via ~/.colordiffrc
+    or gedit's syntax highlighting configuration. See README file for details.
+    (Adeodato Simó)
+
+  * Add Inspect and Branch buttons to notification window. (Robert)
+
+  * Add notification area icon with context menu. (Jelmer)
+
+  * New tango icons. (Pascal Klein)
+
+  * Add simple About dialog. (Jelmer)
+
+  * Add context menu in bzrk. (Jelmer)
+
+ BUG FIXES
+
+  * Fix option help strings to comply with the style guide. (Vincent)
+
+  * Fix import of BzrError. (Aaron)
+
+  * Fix missing attributes for DummyRevision. (Vincent)
+
+  * Never refuse to run with newer versions of bzr, just warn. (Jelmer)
+
+
+0.17.0  2007-06-15
+
+ FEATURES
+
+  * Added an EXPERIMENTAL feature for browsing remote branches in Olive 
+    (Szilveszter)
+
+  * Bookmarked locations are now added to branch/checkout history (Szilveszter)
+
+  * There are now more columns in the file list, and you can sort by them
+    (Szilveszter)
+
+  * A location bar was added to the top of the file list. On Windows, the
+    drive selector combo was moved here (Szilveszter)
+
+  * Don't warn about incompatible versions when .dev version of Bazaar is used 
+    (Aaron)
+
+ BUG FIXES
+ 
+  * Get and Checkout dialogs: scan the branch only if the entry has lost focus
+    (#93653, Szilveszter)
+
+  * Fixed 'bzr gcommit' if command not issued in a branch (#113394, Szilveszter)
+
+0.16.0    2007-05-05
+
+ FEATURES
+ 
+  * An Initialize dialog added to Olive along with a 'ginit' command
+  (#90839, Szilveszter)
+  
+  * Tags support added: 'gtags' command and Branch->Tags menu entry in Olive
+  (#103725, Szilveszter)
+
+ BUG FIXES
+
+  * Sort plugins in gpreferences (Jelmer)
+
+  * Give nicer errors when startup fails (John)
+
+  * Fix 'bzr gdiff notafile' (#107812, John)
+
+  * Find olive.glade on a couple more systems (John)
+
+ INTERNALS
+  
+  * Some minor style fixes (John)
+
+ DOCS
+  
+  * Recommend installation as 'gtk' not 'bzr-gtk'. (#104110, Szilveszter)
+
+0.15.2    2007-04-03
+
+ BUG FIXES
+
+  * Fix regression that prevented gannotate from being used (#97473, 
+                                                             Vincent, Jelmer)
+
+  * Fix regression that prevented gstatus from being used (Jelmer)
+
+  * Fix status dialog size (Jelmer)
+
+ FEATURES
+
+  * Update commit-notify to use new dbus API (Robert)
+
+  * Display remote locations in commit-notify (Robert)
+
+0.15.1    2007-03-25
+
+ BUG FIXES
+ 
+  * Prevent test suite from causing default-encoding changes (Aaron)
+ 
+  * Fix testsuite when Olive was run before (Szilveszter)
+ 
+  * Fix locking issue in Olive (Szilvester, #91522)
+
+  * Don't obtain handle to networkmanager until necessary (Jelmer)
+
+  * Better behavior in annotate when unable to go back (Aaron)
+
+ FEATURES
+ 
+  * Add very simple TortoiseBzr implementation (Wouter, Jelmer)
+
+  * Add 'forward' button in gannotate (Aaron)
+
+  * Add simple GTK+ progress bars (Jelmer)
+
+  * Add gmissing command (Jelmer)
+
+  * Add simple preferences window with plugin list and global settings
+  (Jelmer)
+
+  * Add new command 'commit-notify' to listen for commits on dbus and
+  show them via pynotify. (Robert)
+
+ UI IMPROVEMENTS
+
+  * Move search fields in gannotate directly below source window (Aaron)
+
+  * Move buttons to top, tweak layout (Aaron)
+
+  * Strict commits are now a dialog, not a check box (Jelmer)
+
+0.15.0    2007-03-09
+
+BUG FIXES
+
+  * Fix gannotate interaction with dirstate (Aaron)
+
+  * Default button set on Commit dialog (#83030, Szilveszter)
+
+  * Fix branch-nick handling (Aaron)
+
+  * Defer cairo import to prevent import errors (Aaron)
+
+  * More use of lazy_imports to speed up timing (Aaron)
+
+  * Fix diff window freeze when shown from commit (Szilveszter)
+
+  * Allow to commit single files from the context menu (#54983, Szilveszter)
+
+FEATURES
+
+  * Add ability to install nautilus plugin (#75603, Szilveszter)
+
+  * Add conflicts window (Szilveszter)
+
+  * Use network manager to determine default value of "Local Commit"
+setting (Jelmer)
+
+  * Add status window (Jelmer, Szilveszter)
+
+  * Add revision browser for push and pull dialogs (Szilveszter)
+
+  * Add revert functionality to context menu (Szilveszter)
+
+INTERNAL
+
+  * Some more code converted to not use glade (Szilveszter, Jelmer)
+
+  * Move url history and preferences code to a separate class (Jelmer)
+
+  * Merge revision info code for gannotate and viz into single new widget
+(Jelmer)
+
+  * Add initial testsuite (Jelmer)
+
+0.14.0    2007-01-30
+
+  * Add revert functionality (Szilvester)
+
+  * Rewritten CommitDialog without glade (Szilvester)
+
+  * Allow to commit single files from the context menu (Fixes #54983,
+                                                       Szilvester)
+
+  * Warn about incompatible Bazaar versions (Jelmer)
+
+  * Fixed gbranch (#77751, Szilvester)
+
+  * Use the UI factory (Jelmer)
+
+  * Generic handling of errors (Jelmer)
+
+  * Set default drive letter (#67924, Szilvester)
+
+  * Show error if no diff available for the selected file (#76536,
+                                                          Szilvester)
+
+  * Handle current revision in annotate better (Aaron)
+
+  * Support scrolling based on an offset in annotate (Aaron)
+
+  * Add "Back" button in annotate (Aaron)
+
+  * Removed some unused functions (Aaron)
+
+  * Added Ctrl+G and Ctrl+F shortcuts to annotate (#73965, Vincent)
+
+  * Nicer error when pygtk not installed (Aaron)
+
+  * Show uncommitted changes in annotate (Aaron)
+
+  * Support annotate in olive (#73786, Szilvester)
+
+  * Ignored files no longer shown as unknown (#67926, Szilvester)
+
+  * Don't allow merge if there are local changes (#73770, Szilvester)
+
+  * Fix bookmark dialog (#67922, Szilvester)
+
+  * Fix remove dialog (#73766 and #73767, Szilvester)
+
+  * Several other small regression fixes (Szilvester)
+
+0.13.0    2006-12-13
+
+  * Don't show pending merge list when there are no pending merges
+    (Alexander Belchenko)
+
+  * Better error handling in gcommit (Alexander Belchenko)
+
+  * Fix desktop file compliancy to standard (Toshio Kuratomi) #75278
+
+  * Rename put into context menu (Szilvester Farkas) #73774
+
+  * Improved commit dialog (Szilvester Farkas) #73778
+
+  * Rename dialog contains original name (Szilvester Farkas) #73775
+
+  * Bookmarks can be removed (Szilvester Farkas)
+
+  * Run Olive after maximizing window (Szilvester Farkas) #70134
+
+  * Check empty commit message at commit time (vila) #73737
+
+  * Use dotted revnos in gannotate (Aaron Bentley)
+
+0.12.0    2006-11-04
+
+  * #68127: gcommit is broken
+
+  * #67934: various win32 fixes
+
+  * #67933: fix product name in setup.py
+
+  * #67930: gdiff relies on plugin name being 'gtk'
+
+  * #66937: process doesn't stop after closing commit dialog
+  
+  * #66091: commit after merge fails
+  
+  * #67927: fix non-ascii commit message

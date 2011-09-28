@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: bzr-gtk
+Version: 0.100.0
+Summary: GTK+ Frontends for various Bazaar commands
+Home-page: http://bazaar-vcs.org/BzrGtk
+Author: Jelmer Vernooij
+Author-email: jelmer@samba.org
+License: GNU GPL v2 or later
+Description: UNKNOWN
+Platform: UNKNOWN

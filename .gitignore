@@ -1,2 +1,3 @@
 .vim/swap/*
+.vim/.netrwhist
 *.pyc

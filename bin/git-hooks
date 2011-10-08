@@ -37,12 +37,17 @@ function hook_dirs
     GITDIR=`git rev-parse --git-dir`
     cd $GITDIR/..
     echo "${PWD}/git_hooks${hook}"
+    echo "${PWD}/.githooks${hook}"
     eval echo "`git config hooks.global`"${hook}
 }
 
 function list_hooks_in_dir
 {
-    find "${1}/" -executable -type f 2>/dev/null | grep -v "^.$" | sort -V
+	  if [[ $OSTYPE =~ 'darwin' ]] ; then	
+        find "${1}/" -type f 2>/dev/null | grep -v "^.$" | sort
+    else
+        find "${1}/" -executable -type f 2>/dev/null | grep -v "^.$" | sort -V
+    fi
 }
 
 function run_hooks

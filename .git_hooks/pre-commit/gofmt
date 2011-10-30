@@ -1,8 +1,10 @@
 #!/bin/sh
 
 test_fmt() {
-    IFS=$'\n'
-    for file in $(git diff --cached --name-only | grep '\.go$')
+    hash gofmt 2>&- || { echo >&2 "gofmt not in PATH."; exit 1; }
+    IFS='
+'
+    for file in $(git diff --cached --name-only --diff-filter=ACM | grep '\.go$')
     do
         if test "$(git cat-file -p :$file | gofmt -l)" = "<standard input>"
         then
@@ -11,7 +13,7 @@ test_fmt() {
     done
     if test -n "$list"
     then
-        echo "gofmt needs to format these files (run gofmt -w):"
+        echo >&2 "gofmt needs to format these files (run gofmt -w):"
         printf "$list"
         exit 1
     fi

@@ -75,6 +75,7 @@ filetype plugin indent on "load filetype plugins and indent settings"
 
 "*** Filetypes ***"
 autocmd FileType go setlocal noexpandtab
+autocmd FileType coffee setlocal  shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType html,xhthml,xml setlocal shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType java setlocal shiftwidth=4 softtabstop=4 tabstop=4
 autocmd FileType python setlocal shiftwidth=4 softtabstop=4 tabstop=4
@@ -94,6 +95,9 @@ nnoremap <silent> <C-l> :noh<CR><C-l>
 "tabs"
 map <C-t> :tabnew<CR>
 map <C-Tab> :tabn<CR>
+
+noremap H ^
+noremap L $
 
 "NERDTree"
 map <C-n> :NERDTree<CR>

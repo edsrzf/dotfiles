@@ -76,14 +76,18 @@ filetype plugin indent on "load filetype plugins and indent settings"
 "*** Filetypes ***"
 autocmd FileType go setlocal noexpandtab
 autocmd FileType coffee setlocal  shiftwidth=2 softtabstop=2 tabstop=2
+autocmd FileType javascript setlocal shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType html,xhthml,xml setlocal shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType java setlocal shiftwidth=4 softtabstop=4 tabstop=4
 autocmd FileType python setlocal shiftwidth=4 softtabstop=4 tabstop=4
-autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
-autocmd FileType lua setlocal shiftwidth=2 tabstop=2
-autocmd FileType c,cpp setlocal shiftwidth=2 tabstop=2
+autocmd FileType ruby setlocal shiftwidth=2 softtabstop=2 tabstop=2
+autocmd FileType lua setlocal shiftwidth=2 softtabstop=2 tabstop=2
+autocmd FileType c,cpp setlocal shiftwidth=2 softtabstop=2 tabstop=2
+autocmd FileType rust setlocal shiftwidth=4 softtabstop=4 tabstop=4
+autocmd FileType yaml setlocal shiftwidth=2 softtabstop=2 tabstop=2
 
 autocmd BufRead,BufNewFile *.md set filetype=markdown
+autocmd BufRead,BufNewFile *.adoc setlocal filetype=asciidoc fileencoding=utf-8 fileformat=unix
 
 "*** Mappings ***"
 let mapleader=","

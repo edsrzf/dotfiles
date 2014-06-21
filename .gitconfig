@@ -7,3 +7,5 @@
         user = edsrzf
 [advice]
 	statusHints = false
+[alias]
+	unpushed = log --branches --not --remotes --simplify-by-decoration --decorate --oneline

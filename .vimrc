@@ -18,12 +18,16 @@ set ruler
 set lazyredraw
 set list
 set listchars=tab:»\ ,trail:·
-syntax on
 "allow backspacing over everything"
 set backspace=indent,eol,start
 "ignore these file extensions when globbing"
-set wildignore=*.5,*.6,*.8,*.class,*.o
+set wildignore=*.class,*.o
 set nostartofline             "don't go to start of line when scrolling"
+
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
+
+syntax on
 
 "*** GUI options ***"
 if has('gui_running')

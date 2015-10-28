@@ -28,9 +28,9 @@ if [ "$TERM" != "dumb" ]; then
     alias ls='ls --color=auto'
 fi
 
-# enable programmable completion features
-if [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
+# for Git shell prompt
+if [ -f /usr/share/git/completion/git-prompt.sh ]; then
+    . /usr/share/git/completion/git-prompt.sh
 fi
 
 export PATH="$HOME/bin:$PATH"

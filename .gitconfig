@@ -9,3 +9,7 @@
 	statusHints = false
 [alias]
 	unpushed = log --branches --not --remotes --simplify-by-decoration --decorate --oneline
+[credential]
+	helper = cache
+[push]
+	default = simple

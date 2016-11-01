@@ -24,14 +24,28 @@ esac
 
 # enable color support of ls and also add handy aliases
 if [ "$TERM" != "dumb" ]; then
-    eval "`dircolors -b`"
-    alias ls='ls --color=auto'
+    if hash dircolors; then
+        eval "`dircolors -b`"
+        alias ls='ls --color=auto'
+    else
+        export CLICOLOR=1
+    fi
 fi
 
 # for Git shell prompt
 if [ -f /usr/share/git/completion/git-prompt.sh ]; then
     . /usr/share/git/completion/git-prompt.sh
 fi
+hash brew
+if [ $? -a -f "$(brew --prefix git)/etc/bash_completion.d/git-prompt.sh" ]; then
+    . "$(brew --prefix git)/etc/bash_completion.d/git-prompt.sh"
+fi
+if [ -f ~/.bash_local ]; then
+    . ~/.bash_local
+fi
+
+alias dc=docker-compose
+alias g=git
 
 export PATH="$HOME/bin:$PATH"
 

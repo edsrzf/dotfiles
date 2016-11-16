@@ -24,7 +24,7 @@ esac
 
 # enable color support of ls and also add handy aliases
 if [ "$TERM" != "dumb" ]; then
-    if hash dircolors; then
+    if hash dircolors &> /dev/null; then
         eval "`dircolors -b`"
         alias ls='ls --color=auto'
     else

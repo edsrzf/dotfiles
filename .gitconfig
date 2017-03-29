@@ -1,6 +1,5 @@
 [user]
 	name = Evan Shaw
-	email = edsrzf@gmail.com
 [color]
 	ui = true
 [github]
@@ -15,3 +14,5 @@
 	default = simple
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+[include]
+	path = .gitlocal

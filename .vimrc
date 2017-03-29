@@ -112,4 +112,7 @@ noremap H ^
 noremap L $
 
 "NERDTree"
-map <C-n> :NERDTree<CR>
+map <C-n> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
+
+map <C-p> :CtrlP

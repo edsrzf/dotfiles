@@ -36,9 +36,14 @@ fi
 if [ -f /usr/share/git/completion/git-prompt.sh ]; then
     . /usr/share/git/completion/git-prompt.sh
 fi
-hash brew
-if [ $? -a -f "$(brew --prefix git)/etc/bash_completion.d/git-prompt.sh" ]; then
-    . "$(brew --prefix git)/etc/bash_completion.d/git-prompt.sh"
+
+if hash brew; then
+    if [ -f "$(brew --prefix git)/etc/bash_completion.d/git-prompt.sh" ]; then
+        . "$(brew --prefix git)/etc/bash_completion.d/git-prompt.sh"
+    fi
+    if [ $? -a -f "$(brew --prefix)/etc/bash_completion" ]; then
+        . "$(brew --prefix)/etc/bash_completion"
+    fi
 fi
 if [ -f ~/.bash_local ]; then
     . ~/.bash_local

@@ -3,7 +3,7 @@
 [color]
 	ui = true
 [github]
-        user = edsrzf
+	user = edsrzf
 [advice]
 	statusHints = false
 [alias]
@@ -12,7 +12,9 @@
 	helper = cache
 [push]
 	default = current
-[url "git@github.com:"]
-	insteadOf = https://github.com/
+[url "git@github.com:vend"]
+	insteadOf = https://github.com/vend
 [include]
 	path = .gitlocal
+[merge]
+	tool = gvimdiff

@@ -111,6 +111,13 @@ map <C-Tab> :tabn<CR>
 noremap H ^
 noremap L $
 
+"vim-go"
+let g:go_fmt_options = {'gofmt': '-s'}
+
+"vim-prettier"
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.ts Prettier
+
 "NERDTree"
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1

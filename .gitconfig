@@ -18,3 +18,5 @@
 	path = .gitlocal
 [merge]
 	tool = gvimdiff
+[core]
+	commentchar = ";"

@@ -1,0 +1,30 @@
+{
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
+  "vim.smartcase": true,
+  "vim.substituteGlobalFlag": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [";"],
+      "after": [":"]
+    }
+  ],
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "explorer.confirmDelete": false,
+  "tslint.autoFixOnSave": true,
+  "tslint.packageManager": "yarn",
+  "npm.packageManager": "yarn",
+  "editor.formatOnSave": true,
+  "go.lintTool": "gometalinter",
+  "go.lintOnSave": "off",
+  "[html]": {
+    "editor.formatOnSave": false
+  },
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "window.zoomLevel": 0,
+  "typescript.updateImportsOnFileMove.enabled": "always"
+}
